@@ -1864,7 +1864,7 @@ class GymNavbar extends HTMLElement {
                     >
 
                         <img
-                            src="${this.url("img/alphonsa-logo.png")}"
+                            src="${this.url("img/alphonsa-logo.webp")}"
                             alt="Alphonsa College"
                             class="brand-logo"
                         >
