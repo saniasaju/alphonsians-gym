@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-01": {
             number: "01",
             title: "Banana Peanut Oats",
-            image: "./img/recipe-banana-oats.jfif",
+            image: "./img/recipe-banana-oats.webp",
             imageAlt: "Banana and peanut oats topped with sliced fruit",
             facts: [
                 { label: "Preparation", value: "5 minutes" },
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-02": {
             number: "02",
             title: "Egg & Veggie Wrap",
-            image: "./img/recipe-egg-wrap.jfif",
+            image: "./img/recipe-egg-wrap.webp",
             imageAlt: "Egg and vegetable wrap served with fresh greens",
             facts: [
                 { label: "Preparation", value: "10 minutes" },
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-03": {
             number: "03",
             title: "Chickpea Crunch Bowl",
-            image: "./img/recipe-chickpea-bowl.jfif",
+            image: "./img/recipe-chickpea-bowl.webp",
             imageAlt: "Chickpea bowl with cucumber, tomato and herbs",
             facts: [
                 { label: "Preparation", value: "15 minutes" },
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-04": {
             number: "04",
             title: "Cucumber Curd Rice",
-            image: "./img/recipe-curd-rice.jfif",
+            image: "./img/recipe-curd-rice.webp",
             imageAlt: "Curd rice served with cucumber and tempered spices",
             facts: [
                 { label: "Preparation", value: "10 minutes" },
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-05": {
             number: "05",
             title: "Paneer Millet Bowl",
-            image: "./img/recipe-paneer-millet.jfif",
+            image: "./img/recipe-paneer-millet.webp",
             imageAlt: "Paneer and millet bowl with colourful vegetables",
             facts: [
                 { label: "Preparation", value: "10 minutes" },
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-06": {
             number: "06",
             title: "Vegetable Poha",
-            image: "./img/recipe-vegetable-poha.jfif",
+            image: "./img/recipe-vegetable-poha.webp",
             imageAlt: "Vegetable poha with peas, carrots and fresh coriander",
             facts: [
                 { label: "Preparation", value: "10 minutes" },
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-07": {
             number: "07",
             title: "Sprout Chaat",
-            image: "./img/recipe-sprout-chaat.jfif",
+            image: "./img/recipe-sprout-chaat.webp",
             imageAlt: "Fresh sprout chaat with tomato, cucumber, onion and coriander",
             facts: [
                 { label: "Preparation", value: "15 minutes" },
@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "recipe-08": {
             number: "08",
             title: "Lentil Veggie Khichdi",
-            image: "./img/recipe-veggie-khichdi.jfif",
+            image: "./img/recipe-veggie-khichdi.webp",
             imageAlt: "Lentil and vegetable khichdi served warm with fresh herbs",
             facts: [
                 { label: "Preparation", value: "10 minutes" },
