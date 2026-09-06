@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Alphonsians' Gym — student fitness and wellness at Alphonsa College, Pala."
+    >
+
+    <title>Alphonsians' Gym</title>
+
+
+    <!-- ======================================================
+         FONTS
+    ======================================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ======================================================
+         STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script
+        src="./components/gym-navbar.js"
+        defer>
+    </script>
+
+    <script
+    src="./components/gym-footer.js"
+    defer
+></script>
+
+</head>
+
+
+<body>
+
+    <gym-navbar
+        transparent
+        transparent-until="#home">
+    </gym-navbar>
+
+    <main>
+
+
+        <!-- ==================================================
+             00 — HERO
+        =================================================== -->
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+
+            <!-- Background -->
+
+            <div
+                class="hero-media"
+                aria-hidden="true"
+            >
+
+                <div class="hero-image"></div>
+
+                <div class="hero-shade"></div>
+
+            </div>
+
+
+            <!-- Initial Cinematic Reveal -->
+
+            <div
+                class="hero-curtain"
+                aria-hidden="true"
+            ></div>
+
+
+
+            <!-- Hero Metadata -->
+
+            <div class="hero-meta hero-reveal">
+
+                <span class="section-count section-count--light">
+                    ( Student Fitness )
+                </span>
+
+                <span>
+                    Alphonsa College · Pala
+                </span>
+
+            </div>
+
+
+
+            <!-- Hero Footer -->
+
+            <div class="hero-footer">
+
+                <div class="hero-description hero-reveal">
+
+                    <p>
+                        An open fitness space for students
+                        to move, train and build healthier
+                        habits.
+                    </p>
+
+                </div>
+
+
+                <span class="section-count section-count--light">
+                    00 — 05
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             01 — ABOUT
+        =================================================== -->
+
+        <section
+            class="section intro-section"
+            id="about"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Meta -->
+
+                <div class="section-label">
+
+                    <span>
+                        ( About the Gym )
+                    </span>
+
+                    <span class="section-count section-count--dark">
+                        01 — 05
+                    </span>
+
+                </div>
+
+
+
+                <!-- Content -->
+
+                <div class="intro-layout">
+
+                    <h2 class="display-heading">
+
+                        A SPACE TO
+
+                        <span>
+                            MOVE BETTER,
+                        </span>
+
+                        FEEL STRONGER,
+                        LIVE HEALTHIER.
+
+                    </h2>
+
+
+                    <div class="intro-copy">
+
+                        <p>
+                            Alphonsians' Gym is a
+                            student-focused fitness space
+                            at Alphonsa College. Students
+                            can use the gym freely during
+                            available hours and access
+                            equipment based on current
+                            availability.
+                        </p>
+
+
+                        <p>
+                            Beyond physical training, the
+                            platform supports students with
+                            workout guidance, wellness
+                            resources and practical fitness
+                            tools.
+                        </p>
+
+
+                        <a
+                            href="gym.html"
+                            class="text-link"
+                        >
+                            Explore the Gym
+
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             02 — BOOK A SLOT
+        =================================================== -->
+
+        <section
+            class="availability-section"
+            id="booking"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="availability-heading">
+
+                    <div class="section-label light-label">
+
+                        <span>
+                            ( Book a Slot )
+                        </span>
+
+                        <span class="section-count section-count--light">
+                            02 — 05
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="availability-title-row">
+
+                        <h2>
+
+                            FIND YOUR
+
+                            <span>
+                                TIME TO MOVE.
+                            </span>
+
+                        </h2>
+
+
+                        <p>
+                            Choose a time based on the
+                            equipment available during
+                            each session.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     DATE SELECTOR
+                =================================================== -->
+
+                <div
+                    class="date-selector"
+                    aria-label="Select a date"
+                >
+
+
+                    <button
+                        class="date-option active"
+                        type="button"
+                        data-date="2026-08-31"
+                        aria-pressed="true"
+                    >
+
+                        <span>
+                            Mon
+                        </span>
+
+                        <strong>
+                            31
+                        </strong>
+
+                    </button>
+
+
+
+                    <button
+                        class="date-option"
+                        type="button"
+                        data-date="2026-09-01"
+                        aria-pressed="false"
+                    >
+
+                        <span>
+                            Tue
+                        </span>
+
+                        <strong>
+                            01
+                        </strong>
+
+                    </button>
+
+
+
+                    <button
+                        class="date-option"
+                        type="button"
+                        data-date="2026-09-02"
+                        aria-pressed="false"
+                    >
+
+                        <span>
+                            Wed
+                        </span>
+
+                        <strong>
+                            02
+                        </strong>
+
+                    </button>
+
+
+
+                    <button
+                        class="date-option"
+                        type="button"
+                        data-date="2026-09-03"
+                        aria-pressed="false"
+                    >
+
+                        <span>
+                            Thu
+                        </span>
+
+                        <strong>
+                            03
+                        </strong>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     SLOT LIST
+                =================================================== -->
+
+                <div class="slot-list">
+
+
+                    <!-- Column Labels -->
+
+                    <div
+                        class="slot-columns"
+                        aria-hidden="true"
+                    >
+
+                        <span>
+                            Time
+                        </span>
+
+                        <span>
+                            Available Equipment
+                        </span>
+
+                        <span></span>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         SLOT 01
+                    =================================================== -->
+
+                    <article class="slot-row">
+
+                        <div class="slot-time">
+
+                            <span class="slot-number">
+                                01
+                            </span>
+
+                            <h3>
+                                04:00 — 05:00 PM
+                            </h3>
+
+                        </div>
+
+
+
+                        <div class="slot-equipment">
+
+                            <span class="slot-mobile-label">
+                                Available Equipment
+                            </span>
+
+                            <p>
+                                Dumbbells · Adjustable Weight Bench ·
+                                Resistance Bands · Kettlebells ·
+                                Pull-Up Bar · Yoga Mat · Jump Rope
+                            </p>
+
+                        </div>
+
+
+
+                        <a
+                            href="booking.html?date=2026-08-31&time=16:00"
+                            class="slot-arrow-link"
+                            aria-label="Book the 4 PM to 5 PM time slot"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ==================================================
+                         SLOT 02
+                    =================================================== -->
+
+                    <article class="slot-row">
+
+                        <div class="slot-time">
+
+                            <span class="slot-number">
+                                02
+                            </span>
+
+                            <h3>
+                                05:00 — 06:00 PM
+                            </h3>
+
+                        </div>
+
+
+
+                        <div class="slot-equipment">
+
+                            <span class="slot-mobile-label">
+                                Available Equipment
+                            </span>
+
+                            <p>
+                                Barbell & Weight Plates ·
+                                Resistance Bands · Kettlebells ·
+                                Pull-Up Bar · Yoga Mat
+                            </p>
+
+                        </div>
+
+
+
+                        <a
+                            href="booking.html?date=2026-08-31&time=17:00"
+                            class="slot-arrow-link"
+                            aria-label="Book the 5 PM to 6 PM time slot"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ==================================================
+                         SLOT 03
+                    =================================================== -->
+
+                    <article class="slot-row">
+
+                        <div class="slot-time">
+
+                            <span class="slot-number">
+                                03
+                            </span>
+
+                            <h3>
+                                06:00 — 07:00 PM
+                            </h3>
+
+                        </div>
+
+
+
+                        <div class="slot-equipment">
+
+                            <span class="slot-mobile-label">
+                                Available Equipment
+                            </span>
+
+                            <p>
+                                Dumbbells · Barbell & Weight Plates ·
+                                Yoga Mat · Jump Rope
+                            </p>
+
+                        </div>
+
+
+
+                        <a
+                            href="booking.html?date=2026-08-31&time=18:00"
+                            class="slot-arrow-link"
+                            aria-label="Book the 6 PM to 7 PM time slot"
+                        >
+                            ↗
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- General Booking CTA -->
+
+                <div class="availability-footer">
+
+                    <a
+                        href="booking.html"
+                        class="book-slot-link"
+                    >
+                        Book a Slot
+
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             03 — TRAIN
+        =================================================== -->
+
+        <section
+            class="section train-section"
+            id="train"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Meta -->
+
+                <div class="section-label">
+
+                    <span>
+                        ( Training )
+                    </span>
+
+                    <span class="section-count section-count--dark">
+                        03 — 05
+                    </span>
+
+                </div>
+
+
+
+                <!-- Section Intro -->
+
+                <div class="train-intro">
+
+                    <h2 class="display-heading">
+
+                        TRAIN WITH
+
+                        <span>
+                            DIRECTION.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+                        Explore simple workout plans
+                        designed around different fitness
+                        levels and goals.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Training Cards -->
+
+                <div class="train-grid">
+
+                    <div class="training-list">
+
+
+                        <!-- 01 — BEGINNER -->
+
+                        <a
+                            href="beginner-workout.html"
+                            class="training-item"
+                        >
+
+                            <div class="training-image">
+
+                                <img
+                                    src="./img/beginner-workout.png"
+                                    alt=""
+                                >
+
+                            </div>
+
+
+                            <div class="training-overlay"></div>
+
+
+                            <div class="training-top">
+
+                                <span class="training-number">
+                                    01
+                                </span>
+
+                                <span
+                                    class="arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-copy">
+
+                                <h3>
+                                    Beginner
+                                </h3>
+
+                                <p>
+                                    Build confidence with
+                                    simple, full-body routines.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <!-- 02 — STRENGTH -->
+
+                        <a
+                            href="strength-workout.html"
+                            class="training-item"
+                        >
+
+                            <div class="training-image">
+
+                                <img
+                                    src="./img/strength-workout.png"
+                                    alt=""
+                                >
+
+                            </div>
+
+
+                            <div class="training-overlay"></div>
+
+
+                            <div class="training-top">
+
+                                <span class="training-number">
+                                    02
+                                </span>
+
+                                <span
+                                    class="arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-copy">
+
+                                <h3>
+                                    Strength
+                                </h3>
+
+                                <p>
+                                    Develop foundational
+                                    strength and muscular
+                                    endurance.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <!-- 03 — WEIGHT CONTROL -->
+
+                        <a
+                            href="weight-control.html"
+                            class="training-item"
+                        >
+
+                            <div class="training-image">
+
+                                <img
+                                    src="./img/weight-control.png"
+                                    alt=""
+                                >
+
+                            </div>
+
+
+                            <div class="training-overlay"></div>
+
+
+                            <div class="training-top">
+
+                                <span class="training-number">
+                                    03
+                                </span>
+
+                                <span
+                                    class="arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-copy">
+
+                                <h3>
+                                    Weight Control
+                                </h3>
+
+                                <p>
+                                    Combine movement,
+                                    conditioning and
+                                    consistency.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+
+
+                        <!-- 04 — ENDURANCE -->
+
+                        <a
+                            href="endurance-workout.html"
+                            class="training-item"
+                        >
+
+                            <div class="training-image">
+
+                                <img
+                                    src="./img/endurance-workout.png"
+                                    alt=""
+                                >
+
+                            </div>
+
+
+                            <div class="training-overlay"></div>
+
+
+                            <div class="training-top">
+
+                                <span class="training-number">
+                                    04
+                                </span>
+
+                                <span
+                                    class="arrow"
+                                    aria-hidden="true"
+                                >
+                                    ↗
+                                </span>
+
+                            </div>
+
+
+                            <div class="training-copy">
+
+                                <h3>
+                                    Endurance
+                                </h3>
+
+                                <p>
+                                    Improve stamina through
+                                    progressive cardio
+                                    routines.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+     04 — WELLNESS
+=================================================== -->
+
+<section
+    class="section wellness-section"
+    id="wellness"
+>
+
+    <div class="container">
+
+
+        <!-- Section Meta -->
+
+        <div class="section-label">
+
+            <span>
+                ( Wellness )
+            </span>
+
+            <span class="section-count section-count--dark">
+                04 — 05
+            </span>
+
+        </div>
+
+
+        <!-- Section Intro -->
+
+        <div class="home-wellness-intro">
+
+            <h2 class="display-heading">
+
+                FEEL WELL.
+
+                <span>
+                    BEYOND TRAINING.
+                </span>
+
+            </h2>
+
+
+            <p>
+                Explore practical guidance for movement,
+                nutrition, recovery, mental well-being
+                and healthier everyday meals.
+            </p>
+
+        </div>
+
+
+        <!-- Wellness Collection -->
+
+        <div
+            class="home-wellness-scroller"
+            aria-label="Explore wellness resources"
+        >
+
+
+            <!-- 01 — MOVEMENT -->
+
+            <a
+                href="wellness.html#wellness-overview"
+                class="home-wellness-card"
+            >
+
+                <div class="home-wellness-image">
+
+                    <img
+                        src="./img/wellness-fitness.png"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <div
+                    class="home-wellness-overlay"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="home-wellness-card-top">
+
+                    <span class="home-wellness-number">
+                        01
+                    </span>
+
+                    <span
+                        class="home-wellness-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <div class="home-wellness-card-copy">
+
+                    <span class="home-wellness-card-meta">
+                        Everyday Wellness
+                    </span>
+
+                    <h3>
+                        Movement
+                    </h3>
+
+                    <p>
+                        Build movement into daily life
+                        in ways you can return to.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 02 — NUTRITION + HYDRATION -->
+
+            <a
+                href="wellness.html#wellness-overview"
+                class="home-wellness-card"
+            >
+
+                <div class="home-wellness-image">
+
+                    <img
+                        src="./img/wellness-nutrition.png"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <div
+                    class="home-wellness-overlay"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="home-wellness-card-top">
+
+                    <span class="home-wellness-number">
+                        02
+                    </span>
+
+                    <span
+                        class="home-wellness-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <div class="home-wellness-card-copy">
+
+                    <span class="home-wellness-card-meta">
+                        Everyday Wellness
+                    </span>
+
+                    <h3>
+                        Nutrition &amp; Hydration
+                    </h3>
+
+                    <p>
+                        Support steady energy with
+                        practical meals and hydration.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 03 — SLEEP + RECOVERY -->
+
+            <a
+                href="wellness.html#wellness-overview"
+                class="home-wellness-card"
+            >
+
+                <div class="home-wellness-image">
+
+                    <img
+                        src="./img/wellness-recovery.png"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <div
+                    class="home-wellness-overlay"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="home-wellness-card-top">
+
+                    <span class="home-wellness-number">
+                        03
+                    </span>
+
+                    <span
+                        class="home-wellness-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <div class="home-wellness-card-copy">
+
+                    <span class="home-wellness-card-meta">
+                        Everyday Wellness
+                    </span>
+
+                    <h3>
+                        Sleep &amp; Recovery
+                    </h3>
+
+                    <p>
+                        Make rest part of a routine
+                        that supports long-term progress.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 04 — MENTAL WELL-BEING -->
+
+            <a
+                href="wellness.html#wellness-overview"
+                class="home-wellness-card"
+            >
+
+                <div class="home-wellness-image">
+
+                    <img
+                        src="./img/wellness-mental-wellbeing.png"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <div
+                    class="home-wellness-overlay"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="home-wellness-card-top">
+
+                    <span class="home-wellness-number">
+                        04
+                    </span>
+
+                    <span
+                        class="home-wellness-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <div class="home-wellness-card-copy">
+
+                    <span class="home-wellness-card-meta">
+                        Everyday Wellness
+                    </span>
+
+                    <h3>
+                        Mental Well-being
+                    </h3>
+
+                    <p>
+                        Create space to reset and know
+                        when reaching out can help.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 05 — HEALTHY RECIPES -->
+
+            <a
+                href="wellness.html#healthy-recipes"
+                class="home-wellness-card"
+            >
+
+                <div class="home-wellness-image">
+
+                    <img
+                        src="./img/wellness-recipes.png"
+                        alt=""
+                    >
+
+                </div>
+
+
+                <div
+                    class="home-wellness-overlay"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="home-wellness-card-top">
+
+                    <span class="home-wellness-number">
+                        05
+                    </span>
+
+                    <span
+                        class="home-wellness-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </span>
+
+                </div>
+
+
+                <div class="home-wellness-card-copy">
+
+                    <span class="home-wellness-card-meta">
+                        Student-friendly Meals
+                    </span>
+
+                    <h3>
+                        Healthy Recipes
+                    </h3>
+
+                    <p>
+                        Explore familiar, practical meals
+                        made for everyday student life.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Section Footer -->
+
+        <div class="home-wellness-footer">
+
+            <p>
+                Scroll to explore
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+
+    <!-- ======================================================
+         05 — FOOTER
+    ======================================================= -->
+
+    <gym-footer
+    label="Contact"
+    count="05 — 05"></gym-footer>
+
+
+    <!-- ======================================================
+         SCRIPT
+    ======================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

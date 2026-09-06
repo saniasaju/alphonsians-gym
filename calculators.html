@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Use the calorie and BMI calculators from Alphonsians' Gym, Alphonsa College, Pala."
+    >
+
+    <title>Calculators | Alphonsians' Gym</title>
+
+
+    <!-- ======================================================
+         FONTS
+    ======================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ======================================================
+         GLOBAL STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- ======================================================
+         CALCULATORS PAGE STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="calculators.css"
+    >
+
+
+    <!-- ======================================================
+         REUSABLE NAVBAR
+    ======================================================= -->
+
+    <script
+        src="./components/gym-navbar.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="calculators-page">
+
+
+    <!-- ======================================================
+         NAVIGATION
+    ======================================================= -->
+
+    <gym-navbar current="calculators"></gym-navbar>
+
+
+    <!-- ======================================================
+         MAIN
+    ======================================================= -->
+
+    <main class="calculators-main">
+
+
+        <!-- ==================================================
+             CALCULATOR VIEWPORT
+        =================================================== -->
+
+        <div
+            class="calculators-viewport"
+            id="calculatorsViewport"
+        >
+
+
+            <!-- ==============================================
+                 HORIZONTAL TRACK
+            =============================================== -->
+
+            <div
+                class="calculators-track"
+                id="calculatorsTrack"
+            >
+
+
+                <!-- ==========================================
+                     01 — CALORIE CALCULATOR
+                =========================================== -->
+
+                <section
+                    class="calculator-slide calorie-slide"
+                    id="calorieCalculator"
+                    data-calculator="0"
+                    aria-labelledby="calorieTitle"
+                    aria-hidden="false"
+                >
+
+
+                    <!-- ======================================
+                         LEFT — CALCULATOR INTRO
+                    ======================================= -->
+
+                    <div class="calculator-intro calculator-intro--light">
+
+
+                        <!-- Top Meta -->
+
+                        <div class="calculator-intro-top">
+
+                            <span>
+                                Daily Energy
+                            </span>
+
+                            <button
+                                class="calculator-switch-link"
+                                id="nextCalculator"
+                                type="button"
+                                aria-controls="bmiCalculator"
+                            >
+                                <span>
+                                    BMI
+                                </span>
+
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                            </button>
+
+                        </div>
+
+
+                        <!-- Main Intro -->
+
+                        <div class="calculator-intro-main">
+
+                            <h1
+                                class="calculator-title"
+                                id="calorieTitle"
+                            >
+                                <span class="calculator-title-primary">
+                                    CALORIE
+                                </span>
+
+                                <span class="calculator-title-accent">
+                                    CALC.
+                                </span>
+                            </h1>
+
+
+                            <p class="calculator-description">
+                                Estimate your daily energy needs
+                                based on your body, activity level
+                                and fitness goal.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Bottom Meta -->
+
+                        <div class="calculator-intro-bottom">
+
+                            <span>
+                                ( Calculators )
+                            </span>
+
+                            <span>
+                                01 / 02
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ======================================
+                         RIGHT — CALORIE CALCULATOR
+                    ======================================= -->
+
+                    <div class="calculator-workspace calculator-workspace--dark">
+
+
+                        <!-- ==================================
+                             CALORIE FORM
+                        =================================== -->
+
+                        <form
+                            class="calculator-form calorie-form"
+                            id="calorieForm"
+                        >
+
+
+                            <!-- ==============================
+                                 01 — BODY DETAILS
+                            =============================== -->
+
+                            <fieldset class="calculator-group">
+
+
+                                <legend class="calculator-group-label">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <strong>
+                                        Body Details
+                                    </strong>
+
+                                </legend>
+
+
+                                <!-- Gender -->
+
+                                <div class="gender-options">
+
+
+                                    <!-- Female -->
+
+                                    <label class="choice-button">
+
+                                        <input
+                                            type="radio"
+                                            name="gender"
+                                            value="female"
+                                            checked
+                                        >
+
+                                        <span>
+                                            Female
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Male -->
+
+                                    <label class="choice-button">
+
+                                        <input
+                                            type="radio"
+                                            name="gender"
+                                            value="male"
+                                        >
+
+                                        <span>
+                                            Male
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- Measurements -->
+
+                                <div class="measurement-grid">
+
+
+                                    <!-- Age -->
+
+                                    <label class="measurement-field">
+
+                                        <span class="field-label">
+                                            Age
+                                        </span>
+
+                                        <span class="field-input">
+
+                                            <input
+                                                type="number"
+                                                id="calorieAge"
+                                                name="age"
+                                                min="15"
+                                                max="100"
+                                                value="21"
+                                                required
+                                            >
+
+                                            <span>
+                                                YRS
+                                            </span>
+
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Weight -->
+
+                                    <label class="measurement-field">
+
+                                        <span class="field-label">
+                                            Weight
+                                        </span>
+
+                                        <span class="field-input">
+
+                                            <input
+                                                type="number"
+                                                id="calorieWeight"
+                                                name="weight"
+                                                min="30"
+                                                max="250"
+                                                value="60"
+                                                required
+                                            >
+
+                                            <span>
+                                                KG
+                                            </span>
+
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Height -->
+
+                                    <label class="measurement-field">
+
+                                        <span class="field-label">
+                                            Height
+                                        </span>
+
+                                        <span class="field-input">
+
+                                            <input
+                                                type="number"
+                                                id="calorieHeight"
+                                                name="height"
+                                                min="120"
+                                                max="220"
+                                                value="160"
+                                                required
+                                            >
+
+                                            <span>
+                                                CM
+                                            </span>
+
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <!-- ==============================
+                                 02 — ACTIVITY LEVEL
+                            =============================== -->
+
+                            <fieldset class="calculator-group">
+
+
+                                <legend class="calculator-group-label">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <strong>
+                                        Activity Level
+                                    </strong>
+
+                                </legend>
+
+
+                                <div class="activity-options">
+
+
+                                    <!-- Low -->
+
+                                    <label class="activity-option">
+
+                                        <input
+                                            type="radio"
+                                            name="activity"
+                                            value="low"
+                                        >
+
+                                        <span class="activity-marker"></span>
+
+                                        <span class="activity-label">
+                                            Low
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Moderate -->
+
+                                    <label class="activity-option">
+
+                                        <input
+                                            type="radio"
+                                            name="activity"
+                                            value="moderate"
+                                            checked
+                                        >
+
+                                        <span class="activity-marker"></span>
+
+                                        <span class="activity-label">
+                                            Moderate
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- High -->
+
+                                    <label class="activity-option">
+
+                                        <input
+                                            type="radio"
+                                            name="activity"
+                                            value="high"
+                                        >
+
+                                        <span class="activity-marker"></span>
+
+                                        <span class="activity-label">
+                                            High
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Very High -->
+
+                                    <label class="activity-option">
+
+                                        <input
+                                            type="radio"
+                                            name="activity"
+                                            value="very-high"
+                                        >
+
+                                        <span class="activity-marker"></span>
+
+                                        <span class="activity-label">
+                                            Very High
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <!-- ==============================
+                                 03 — GOAL
+                            =============================== -->
+
+                            <fieldset class="calculator-group">
+
+
+                                <legend class="calculator-group-label">
+
+                                    <span>
+                                        03
+                                    </span>
+
+                                    <strong>
+                                        Goal
+                                    </strong>
+
+                                </legend>
+
+
+                                <div class="goal-options">
+
+
+                                    <!-- Lose -->
+
+                                    <label class="choice-button">
+
+                                        <input
+                                            type="radio"
+                                            name="goal"
+                                            value="lose"
+                                        >
+
+                                        <span>
+                                            Lose
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Maintain -->
+
+                                    <label class="choice-button">
+
+                                        <input
+                                            type="radio"
+                                            name="goal"
+                                            value="maintain"
+                                            checked
+                                        >
+
+                                        <span>
+                                            Maintain
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Gain -->
+
+                                    <label class="choice-button">
+
+                                        <input
+                                            type="radio"
+                                            name="goal"
+                                            value="gain"
+                                        >
+
+                                        <span>
+                                            Gain
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <!-- ==============================
+                                 RESULT + ACTION
+                            =============================== -->
+
+                            <div class="calculator-result-row">
+
+
+                                <!-- Result -->
+
+                                <div class="calorie-result">
+
+                                    <span class="result-label">
+                                        Estimated Daily Target
+                                    </span>
+
+
+                                    <div class="result-number">
+
+                                        <strong
+                                            id="calorieResult"
+                                            aria-live="polite"
+                                        >
+                                            1,834
+                                        </strong>
+
+                                        <span>
+                                            kcal / day
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Calculate -->
+
+                                <button
+                                    class="calculator-button calculator-button--light"
+                                    type="button"
+                                    id="calculateCalories"
+                                >
+
+                                    <span>
+                                        Calculate
+                                    </span>
+
+                                    <span aria-hidden="true">
+                                        ↗
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ==========================================
+                     02 — BMI CALCULATOR
+                =========================================== -->
+
+                <section
+                    class="calculator-slide bmi-slide"
+                    id="bmiCalculator"
+                    data-calculator="1"
+                    aria-labelledby="bmiTitle"
+                    aria-hidden="true"
+                >
+
+
+                    <!-- ======================================
+                         LEFT — CALCULATOR INTRO
+                    ======================================= -->
+
+                    <div class="calculator-intro calculator-intro--dark">
+
+
+                        <!-- Top Meta -->
+
+                        <div class="calculator-intro-top">
+
+                            <button
+                                class="calculator-switch-link"
+                                id="previousCalculator"
+                                type="button"
+                                aria-controls="calorieCalculator"
+                            >
+
+                                <span aria-hidden="true">
+                                    ←
+                                </span>
+
+                                <span>
+                                    Calorie
+                                </span>
+
+                            </button>
+
+                            <span>
+                                Body Mass Index
+                            </span>
+
+                        </div>
+
+
+                        <!-- Main Intro -->
+
+                        <div class="calculator-intro-main">
+
+                            <span class="calculator-kicker">
+                                Student Fitness · Alphonsa College
+                            </span>
+
+
+                            <h2
+                                class="calculator-title"
+                                id="bmiTitle"
+                            >
+
+                                <span class="calculator-title-primary">
+                                    BMI
+                                </span>
+
+                                <span class="calculator-title-accent">
+                                    CALC.
+                                </span>
+
+                            </h2>
+
+
+                            <p class="calculator-description">
+                                Estimate your body mass index
+                                using your height and weight.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Bottom Meta -->
+
+                        <div class="calculator-intro-bottom">
+
+                            <span>
+                                ( Calculators )
+                            </span>
+
+                            <span>
+                                02 / 02
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ======================================
+                         RIGHT — BMI CALCULATOR
+                    ======================================= -->
+
+                    <div class="calculator-workspace calculator-workspace--light">
+
+
+                        <!-- ==================================
+                             BMI FORM
+                        =================================== -->
+
+                        <form
+                            class="calculator-form bmi-form"
+                            id="bmiForm"
+                        >
+
+
+                            <!-- ==============================
+                                 01 — MEASUREMENTS
+                            =============================== -->
+
+                            <fieldset class="calculator-group bmi-measurements">
+
+
+                                <legend class="calculator-group-label">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <strong>
+                                        Measurements
+                                    </strong>
+
+                                </legend>
+
+
+                                <div class="bmi-input-grid">
+
+
+                                    <!-- Weight -->
+
+                                    <label class="bmi-input">
+
+                                        <span class="field-label">
+                                            Weight
+                                        </span>
+
+                                        <span class="bmi-input-control">
+
+                                            <input
+                                                type="number"
+                                                id="bmiWeight"
+                                                name="bmiWeight"
+                                                min="30"
+                                                max="250"
+                                                value="60"
+                                                required
+                                            >
+
+                                            <span>
+                                                KG
+                                            </span>
+
+                                        </span>
+
+                                    </label>
+
+
+                                    <!-- Height -->
+
+                                    <label class="bmi-input">
+
+                                        <span class="field-label">
+                                            Height
+                                        </span>
+
+                                        <span class="bmi-input-control">
+
+                                            <input
+                                                type="number"
+                                                id="bmiHeight"
+                                                name="bmiHeight"
+                                                min="120"
+                                                max="220"
+                                                value="160"
+                                                required
+                                            >
+
+                                            <span>
+                                                CM
+                                            </span>
+
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+
+                            <!-- ==============================
+                                 02 — BMI RESULT
+                            =============================== -->
+
+                            <div class="bmi-result-section">
+
+
+                                <div class="calculator-group-label">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <strong>
+                                        Your Result
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="bmi-result-main">
+
+
+                                    <!-- Result -->
+
+                                    <div class="bmi-value">
+
+                                        <strong
+                                            id="bmiResult"
+                                            aria-live="polite"
+                                        >
+                                            23.4
+                                        </strong>
+
+                                        <span
+                                            id="bmiCategory"
+                                            aria-live="polite"
+                                        >
+                                            Normal
+                                        </span>
+
+                                    </div>
+
+
+                                    <!-- Description -->
+
+                                    <p>
+                                        BMI provides a general estimate
+                                        and does not account for factors
+                                        such as muscle mass or body
+                                        composition.
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- ==========================
+                                     BMI SCALE
+                                =========================== -->
+
+                                <div
+                                    class="bmi-scale"
+                                    aria-label="BMI category scale"
+                                >
+
+                                    <div class="bmi-scale-line">
+
+                                        <span
+                                            class="bmi-scale-position"
+                                            aria-hidden="true"
+                                        ></span>
+
+                                    </div>
+
+
+                                    <div class="bmi-scale-labels">
+
+                                        <span>
+                                            Underweight
+                                        </span>
+
+                                        <span>
+                                            Normal
+                                        </span>
+
+                                        <span>
+                                            Overweight
+                                        </span>
+
+                                        <span>
+                                            High
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- ==============================
+                                 ACTION
+                            =============================== -->
+
+                            <button
+                                class="calculator-button calculator-button--dark"
+                                type="button"
+                                id="calculateBmi"
+                            >
+
+                                <span>
+                                    Calculate BMI
+                                </span>
+
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+            </div>
+            <!-- /.calculators-track -->
+
+        </div>
+        <!-- /.calculators-viewport -->
+
+    </main>
+
+
+    <!-- ======================================================
+         CALCULATORS JAVASCRIPT
+    ======================================================= -->
+
+    <script src="calculators.js"></script>
+
+</body>
+
+</html>

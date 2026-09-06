@@ -1,0 +1,3499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore beginner, strength, weight control and endurance workout guides from Alphonsians' Gym, Alphonsa College, Pala."
+    >
+
+    <title>Train | Alphonsians' Gym</title>
+
+
+    <!-- ======================================================
+         FONTS
+    ======================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ======================================================
+         GLOBAL STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- ======================================================
+         TRAIN PAGE STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="train.css"
+    >
+
+
+    <!-- ======================================================
+         REUSABLE NAVBAR COMPONENT
+    ======================================================= -->
+
+    <script
+        src="./components/gym-navbar.js"
+        defer
+    ></script>
+
+    <!-- ======================================================
+         TRAIN PAGE SCRIPT
+    ======================================================= -->
+
+    <script
+        src="train.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="train-page">
+
+
+    <!-- ======================================================
+         NAVIGATION
+    ======================================================= -->
+
+    <gym-navbar current="train"></gym-navbar>
+
+
+    <!-- ======================================================
+         MAIN
+    ======================================================= -->
+
+    <main class="train-main">
+
+
+        <!-- ==================================================
+             TRAIN READER
+        =================================================== -->
+
+        <section
+            class="train-reader"
+            aria-labelledby="trainPageTitle"
+        >
+
+
+            <!-- ==================================================
+                 LEFT — STATIC INTRO
+            =================================================== -->
+
+            <aside class="train-reader-hero">
+
+
+                <!-- ==============================================
+                     HERO HEADER
+                =============================================== -->
+
+                
+                <div class="train-hero-footer">
+
+
+                    <!-- CURRENT PLAN -->
+
+                    <div class="train-current-plan">
+
+                        <span class="train-current-label">
+                            Current Plan
+                        </span>
+
+                        <strong
+                            id="trainCurrentPlan"
+                            aria-live="polite"
+                        >
+                            Beginner
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PLAN CONTROLS -->
+
+                    <div
+                        class="train-plan-controls"
+                        aria-label="Training plan navigation"
+                    >
+
+                        <button
+                            type="button"
+                            class="train-plan-control"
+                            id="trainPrevious"
+                            aria-label="Previous training plan"
+                            disabled
+                        >
+                            ←
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="train-plan-control"
+                            id="trainNext"
+                            aria-label="Next training plan"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==============================================
+                     HERO MAIN
+                =============================================== -->
+
+                <div class="train-hero-main">
+
+
+                    <h1
+                        class="train-hero-title"
+                        id="trainPageTitle"
+                    >
+                        TRAIN
+
+                        <span>
+                            WITH DIRECTION.
+                        </span>
+                    </h1>
+
+
+                    <p class="train-hero-copy">
+                        Practical workout guides designed
+                        around different starting points,
+                        goals and ways to move.
+                    </p>
+
+
+                </div>
+
+
+                <!-- ==============================================
+                     HERO FOOTER
+                =============================================== -->
+                <div class="train-hero-header">
+
+                    <span>
+                        ( Training )
+                    </span>
+
+                    <span
+                        class="train-plan-count"
+                        id="trainPlanCount"
+                    >
+                        01 — 04
+                    </span>
+
+                </div>
+
+
+            </aside>
+
+
+
+            <!-- ==================================================
+                 RIGHT — TRAINING PLAN READER
+            =================================================== -->
+
+            <div class="train-reader-pane">
+
+
+                <!-- ==============================================
+                     PLAN VIEWPORT
+                =============================================== -->
+
+                <div
+                    class="train-plan-viewport"
+                    id="trainPlanViewport"
+                    aria-roledescription="carousel"
+                    aria-label="Training plans"
+                >
+
+
+                    <div
+                        class="train-plan-track"
+                        id="trainPlanTrack"
+                    >
+
+
+
+    <!-- ==================================================
+        01 — BEGINNER
+    =================================================== -->
+
+    <article
+    class="train-plan-card active"
+    data-plan-index="0"
+    data-plan-name="Beginner"
+    aria-labelledby="beginnerTitle"
+    aria-hidden="false"
+    >
+
+
+    <!-- BACKGROUND -->
+
+    <figure
+        class="train-plan-background"
+        aria-hidden="true"
+    >
+
+        <img
+            src="./img/beginner-workout.png"
+            alt=""
+        >
+
+    </figure>
+
+
+    <div
+        class="train-plan-overlay"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- SCROLLABLE ARTICLE -->
+
+    <div
+        class="train-article-scroll"
+        data-article-scroll
+        tabindex="0"
+    >
+
+
+        <!-- ==================================================
+             ARTICLE HEADER
+        =================================================== -->
+
+        <header class="train-article-header">
+
+    <div class="train-article-meta">
+
+        <span>
+           #1
+        </span>
+
+        <span>
+            Workout Guide
+        </span>
+
+    </div>
+
+
+    <a
+        href="./downloads/beginner-training-plan.pdf"
+        class="train-download"
+        download
+        aria-label="Download Beginner Training plan as PDF"
+    >
+
+        <span>
+            Download
+        </span>
+
+        <span aria-hidden="true">
+            ↓
+        </span>
+
+    </a>
+
+</header>
+
+
+
+        <!-- ==================================================
+             ARTICLE INTRO
+        =================================================== -->
+
+        <div class="train-article-intro">
+
+            <p class="train-article-eyebrow">
+                Beginner Training
+            </p>
+
+
+            <h2 id="beginnerTitle">
+
+                BUILD CONFIDENCE.
+
+                <span>
+                    START SIMPLE.
+                </span>
+
+            </h2>
+
+
+            <p class="train-article-lead">
+                Learn the fundamentals with a simple
+                full-body routine built around control,
+                consistency and gradual progress.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE BODY
+        =================================================== -->
+
+        <div class="train-article-body">
+
+
+
+            <!-- ==================================================
+                 01 — OVERVIEW
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    01
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Overview
+                    </h3>
+
+
+                    <p>
+                        This plan is designed for students
+                        who are new to structured training
+                        or returning after a long break.
+                        The goal is not to make every
+                        session exhausting, but to become
+                        comfortable with basic movements,
+                        learn how to use the equipment and
+                        build a routine that can be repeated
+                        consistently.
+                    </p>
+
+
+                    <div class="train-article-details">
+
+                        <div>
+
+                            <span>
+                                Frequency
+                            </span>
+
+                            <strong>
+                                2–3 sessions / week
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Duration
+                            </span>
+
+                            <strong>
+                                40–55 minutes
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Level
+                            </span>
+
+                            <strong>
+                                Beginner
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Start with two sessions per week,
+                        leaving at least one rest day
+                        between sessions. Once the routine
+                        feels comfortable, gradually move
+                        to three sessions per week.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 02 — TRAINING APPROACH
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    02
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Training approach
+                    </h3>
+
+
+                    <p>
+                        Use a resistance that feels
+                        manageable from the first
+                        repetition to the last. Each
+                        movement should remain controlled,
+                        with enough energy left to complete
+                        another two or three repetitions
+                        if needed.
+                    </p>
+
+
+                    <div class="train-prescription">
+
+                        <span>
+                            General guide
+                        </span>
+
+                        <strong>
+                            2 sets · 8–12 reps · 60–90 sec rest
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        Focus on completing the movement
+                        well before adding more weight.
+                        When you can comfortably complete
+                        the upper end of the repetition
+                        range with consistent technique,
+                        increase the resistance slightly.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 03 — SESSION STRUCTURE
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    03
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Session structure
+                    </h3>
+
+
+                    <!-- ==========================================
+                         WARM-UP
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Warm-up
+                            </span>
+
+                            <strong>
+                                5–8 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Begin with easy movement to
+                            raise your body temperature
+                            and prepare your joints.
+                        </p>
+
+
+                        <ul class="train-article-list">
+
+                            <li>
+                                Brisk walking or light marching
+                            </li>
+
+                            <li>
+                                Arm circles
+                            </li>
+
+                            <li>
+                                Hip hinges
+                            </li>
+
+                            <li>
+                                Bodyweight squats
+                            </li>
+
+                            <li>
+                                Gentle shoulder and hip mobility
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 01
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Goblet Squat
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 sets · 8–10 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Hold one dumbbell or kettlebell
+                            close to your chest. Keep your
+                            feet comfortable, lower with
+                            control and stand tall again.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 02
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Dumbbell Romanian Deadlift
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 sets · 8–10 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Hold the dumbbells in front of
+                            your thighs and push your hips
+                            backward while keeping your spine
+                            comfortably neutral. Return to
+                            standing by driving the hips
+                            forward.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 03
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Incline Push-Up or
+                                    Dumbbell Bench Press
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 sets · 8–10 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Choose whichever variation allows
+                            you to move through the exercise
+                            comfortably and with control.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 04
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    One-Arm Dumbbell Row
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 sets · 8–10 reps each side
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Support yourself on the bench if
+                            needed and pull the dumbbell
+                            toward your side without twisting
+                            your torso.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 05
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                05
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Glute Bridge
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 sets · 10–12 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Lie on a mat with your knees bent,
+                            press through your feet and raise
+                            your hips while keeping the
+                            movement controlled.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 06
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                06
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Dead Bug
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 sets · 6–8 reps each side
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Move the opposite arm and leg
+                            away from your body while keeping
+                            your lower back stable against
+                            the mat.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         COOL-DOWN
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Cool-down
+                            </span>
+
+                            <strong>
+                                5 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Finish with easy walking,
+                            relaxed breathing and gentle
+                            stretches for the muscles you
+                            trained.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 04 — KEEP IN MIND
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    04
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Keep in mind
+                    </h3>
+
+
+                    <p>
+                        Your first few weeks are about
+                        learning, not testing your limits.
+                        Keep each movement comfortable and
+                        controlled. Stop a set if your
+                        technique begins to break down,
+                        and avoid training through sharp
+                        or unusual pain.
+                    </p>
+
+
+                    <div class="train-progression">
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Week 1–2
+                            </span>
+
+                            <p>
+                                Learn the exercises and
+                                establish the routine.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Week 3–4
+                            </span>
+
+                            <p>
+                                Gradually add repetitions
+                                within the recommended range.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Week 5+
+                            </span>
+
+                            <p>
+                                Add a small amount of
+                                resistance when the upper
+                                repetition range feels
+                                comfortable.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        You do not need to increase
+                        something every session. Progress
+                        can also mean moving with better
+                        control, feeling more confident
+                        with the equipment or completing
+                        your routine more consistently.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 05 — EQUIPMENT
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    05
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Equipment used
+                    </h3>
+
+
+                    <p>
+                        This routine uses a small selection
+                        of versatile equipment available
+                        at Alphonsians' Gym.
+                    </p>
+
+
+                    <ul class="train-article-list">
+
+                        <li>
+                            Dumbbells
+                        </li>
+
+                        <li>
+                            Kettlebells
+                        </li>
+
+                        <li>
+                            Adjustable Weight Bench
+                        </li>
+
+                        <li>
+                            Yoga Mat
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE FOOTER
+        =================================================== -->
+
+        <footer class="train-article-footer">
+
+            <span>
+                Alphonsians' Gym
+            </span>
+
+            <span>
+                Beginner
+            </span>
+
+        </footer>
+
+
+    </div>
+
+
+</article>
+
+
+
+<!-- ==================================================
+     02 — STRENGTH
+=================================================== -->
+
+<article
+    class="train-plan-card"
+    data-plan-index="1"
+    data-plan-name="Strength"
+    aria-labelledby="strengthTitle"
+    aria-hidden="true"
+>
+
+
+    <!-- BACKGROUND -->
+
+    <figure
+        class="train-plan-background"
+        aria-hidden="true"
+    >
+
+        <img
+            src="./img/strength-workout.png"
+            alt=""
+        >
+
+    </figure>
+
+
+    <div
+        class="train-plan-overlay"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- SCROLLABLE ARTICLE -->
+
+    <div
+        class="train-article-scroll"
+        data-article-scroll
+        tabindex="-1"
+    >
+
+
+        <!-- ==================================================
+             ARTICLE HEADER
+        =================================================== -->
+
+        <header class="train-article-header">
+
+    <div class="train-article-meta">
+
+        <span>
+            #2
+        </span>
+
+        <span>
+            Workout Guide
+        </span>
+
+    </div>
+
+
+    <a
+        href="./downloads/strength-training-plan.pdf"
+        class="train-download"
+        download
+        aria-label="Download Strength Training plan as PDF"
+    >
+
+        <span>
+            Download
+        </span>
+
+        <span aria-hidden="true">
+            ↓
+        </span>
+
+    </a>
+
+</header>
+
+
+
+        <!-- ==================================================
+             ARTICLE INTRO
+        =================================================== -->
+
+        <div class="train-article-intro">
+
+            <p class="train-article-eyebrow">
+                Strength Training
+            </p>
+
+
+            <h2 id="strengthTitle">
+
+                BUILD STRENGTH.
+
+                <span>
+                    MOVE WITH CONTROL.
+                </span>
+
+            </h2>
+
+
+            <p class="train-article-lead">
+                Develop full-body strength through
+                controlled resistance, consistent
+                technique and gradual progression.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE BODY
+        =================================================== -->
+
+        <div class="train-article-body">
+
+
+
+            <!-- ==================================================
+                 01 — OVERVIEW
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    01
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Overview
+                    </h3>
+
+
+                    <p>
+                        This plan is designed for students
+                        who are comfortable with basic
+                        movement patterns and want to begin
+                        developing greater strength. The
+                        focus is on a small group of
+                        full-body exercises that can be
+                        progressed gradually over time.
+                    </p>
+
+
+                    <div class="train-article-details">
+
+                        <div>
+
+                            <span>
+                                Frequency
+                            </span>
+
+                            <strong>
+                                2–3 sessions / week
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Duration
+                            </span>
+
+                            <strong>
+                                50–65 minutes
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Level
+                            </span>
+
+                            <strong>
+                                Beginner–Intermediate
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Leave at least one rest day between
+                        strength sessions when possible.
+                        Recovery is part of the training
+                        process and gives your muscles time
+                        to adapt before the next session.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 02 — TRAINING APPROACH
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    02
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Training approach
+                    </h3>
+
+
+                    <p>
+                        Choose resistance that makes the
+                        final few repetitions challenging
+                        while still allowing you to maintain
+                        stable, controlled technique.
+                        Avoid sacrificing movement quality
+                        simply to lift more weight.
+                    </p>
+
+
+                    <div class="train-prescription">
+
+                        <span>
+                            General guide
+                        </span>
+
+                        <strong>
+                            3 sets · 6–10 reps · 90–120 sec rest
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        Complete each repetition deliberately
+                        and use the full comfortable range
+                        of motion. When all sets can be
+                        completed at the upper end of the
+                        repetition range with consistent
+                        technique, increase the resistance
+                        slightly.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 03 — SESSION STRUCTURE
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    03
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Session structure
+                    </h3>
+
+
+
+                    <!-- ==========================================
+                         WARM-UP
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Warm-up
+                            </span>
+
+                            <strong>
+                                6–8 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Prepare the major joints and
+                            movement patterns before adding
+                            resistance.
+                        </p>
+
+
+                        <ul class="train-article-list">
+
+                            <li>
+                                Brisk walking or light movement
+                            </li>
+
+                            <li>
+                                Bodyweight squats
+                            </li>
+
+                            <li>
+                                Hip hinges
+                            </li>
+
+                            <li>
+                                Arm circles and shoulder mobility
+                            </li>
+
+                            <li>
+                                Light practice sets of the first exercise
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 01
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Goblet Squat
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    3 sets · 6–10 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Hold a dumbbell or kettlebell
+                            close to your chest. Lower with
+                            control, keep your feet firmly
+                            planted and drive through the
+                            floor as you return to standing.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 02
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Barbell Romanian Deadlift
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    3 sets · 6–8 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Hold the bar close to your body
+                            and push your hips backward while
+                            maintaining a controlled torso
+                            position. Stop when you reach a
+                            comfortable range, then return
+                            to standing.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 03
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Dumbbell Bench Press
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    3 sets · 6–10 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Lie securely on the bench with
+                            your feet planted. Lower the
+                            dumbbells with control and press
+                            them upward without rushing the
+                            movement.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 04
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    One-Arm Dumbbell Row
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    3 sets · 8–10 reps each side
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Support yourself on the bench
+                            and pull the dumbbell toward
+                            your side. Keep your torso stable
+                            and avoid using momentum to move
+                            the weight.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 05
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                05
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Dumbbell Split Squat
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2–3 sets · 8 reps each side
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Stand in a staggered position
+                            with a dumbbell in each hand.
+                            Lower yourself vertically with
+                            control and use the front leg
+                            to return to the starting
+                            position.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 06
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                06
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Plank
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2–3 sets · 20–40 sec
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Maintain a stable position from
+                            shoulders to hips while breathing
+                            normally. End the set when you
+                            can no longer hold the position
+                            comfortably.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         COOL-DOWN
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Cool-down
+                            </span>
+
+                            <strong>
+                                5 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Finish with easy movement,
+                            relaxed breathing and gentle
+                            mobility for the areas trained
+                            during the session.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 04 — PROGRESS GRADUALLY
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    04
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Progress gradually
+                    </h3>
+
+
+                    <p>
+                        Strength develops through repeated,
+                        manageable progress rather than
+                        large jumps in resistance. Keep the
+                        same exercises long enough to become
+                        confident with them before making
+                        significant changes.
+                    </p>
+
+
+                    <div class="train-progression">
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 01
+                            </span>
+
+                            <p>
+                                Begin with a resistance you
+                                can control comfortably
+                                throughout every set.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 02
+                            </span>
+
+                            <p>
+                                Gradually increase repetitions
+                                until you reach the upper end
+                                of the recommended range.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 03
+                            </span>
+
+                            <p>
+                                Add a small amount of
+                                resistance and return to the
+                                lower end of the repetition
+                                range.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p>
+                        Not every session needs to be harder
+                        than the last. Better technique,
+                        greater control and completing the
+                        same workload more comfortably are
+                        also signs of progress.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 05 — EQUIPMENT
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    05
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Equipment used
+                    </h3>
+
+
+                    <p>
+                        This routine uses free weights and
+                        basic equipment available at
+                        Alphonsians' Gym to train the major
+                        movement patterns of the body.
+                    </p>
+
+
+                    <ul class="train-article-list">
+
+                        <li>
+                            Dumbbells
+                        </li>
+
+                        <li>
+                            Barbell & Weight Plates
+                        </li>
+
+                        <li>
+                            Adjustable Weight Bench
+                        </li>
+
+                        <li>
+                            Kettlebells
+                        </li>
+
+                        <li>
+                            Yoga Mat
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE FOOTER
+        =================================================== -->
+
+        <footer class="train-article-footer">
+
+            <span>
+                Alphonsians' Gym
+            </span>
+
+            <span>
+                Strength
+            </span>
+
+        </footer>
+
+
+    </div>
+
+
+</article>
+
+
+
+<!-- ==================================================
+     03 — WEIGHT CONTROL
+=================================================== -->
+
+<article
+    class="train-plan-card"
+    data-plan-index="2"
+    data-plan-name="Weight Control"
+    aria-labelledby="weightControlTitle"
+    aria-hidden="true"
+>
+
+
+    <!-- BACKGROUND -->
+
+    <figure
+        class="train-plan-background"
+        aria-hidden="true"
+    >
+
+        <img
+            src="./img/weight-control.png"
+            alt=""
+        >
+
+    </figure>
+
+
+    <div
+        class="train-plan-overlay"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- SCROLLABLE ARTICLE -->
+
+    <div
+        class="train-article-scroll"
+        data-article-scroll
+        tabindex="-1"
+    >
+
+
+        <!-- ==================================================
+             ARTICLE HEADER
+        =================================================== -->
+
+        <header class="train-article-header">
+
+    <div class="train-article-meta">
+
+        <span>
+            #3
+        </span>
+
+        <span>
+            Workout Guide
+        </span>
+
+    </div>
+
+
+    <a
+        href="./downloads/weight-control-training-plan.pdf"
+        class="train-download"
+        download
+        aria-label="Download Weight Control training plan as PDF"
+    >
+
+        <span>
+            Download
+        </span>
+
+        <span aria-hidden="true">
+            ↓
+        </span>
+
+    </a>
+
+</header>
+
+
+
+        <!-- ==================================================
+             ARTICLE INTRO
+        =================================================== -->
+
+        <div class="train-article-intro">
+
+            <p class="train-article-eyebrow">
+                Weight Control
+            </p>
+
+
+            <h2 id="weightControlTitle">
+
+                MOVE OFTEN.
+
+                <span>
+                    STAY CONSISTENT.
+                </span>
+
+            </h2>
+
+
+            <p class="train-article-lead">
+                Combine strength, steady movement and
+                conditioning in a routine designed to
+                support regular, sustainable activity.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE BODY
+        =================================================== -->
+
+        <div class="train-article-body">
+
+
+
+            <!-- ==================================================
+                 01 — OVERVIEW
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    01
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Overview
+                    </h3>
+
+
+                    <p>
+                        This plan combines resistance
+                        exercises with continuous movement
+                        and short conditioning intervals.
+                        The aim is to build a routine that
+                        keeps you active while also
+                        supporting strength, stamina and
+                        overall fitness.
+                    </p>
+
+
+                    <div class="train-article-details">
+
+                        <div>
+
+                            <span>
+                                Frequency
+                            </span>
+
+                            <strong>
+                                3 sessions / week
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Duration
+                            </span>
+
+                            <strong>
+                                45–60 minutes
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Level
+                            </span>
+
+                            <strong>
+                                Beginner–Intermediate
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Leave enough time between sessions
+                        to recover comfortably. On other
+                        days, light activity such as
+                        walking, stretching or easy
+                        mobility work can help you stay
+                        active without turning every day
+                        into a demanding workout.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 02 — TRAINING APPROACH
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    02
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Training approach
+                    </h3>
+
+
+                    <p>
+                        The goal is to keep the session
+                        moving without rushing your
+                        technique. Use moderate resistance
+                        and move between exercises at a
+                        pace you can maintain consistently.
+                    </p>
+
+
+                    <div class="train-prescription">
+
+                        <span>
+                            General guide
+                        </span>
+
+                        <strong>
+                            2–3 sets · 10–12 reps · 45–75 sec rest
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        Choose resistance that allows you
+                        to complete each set with control.
+                        The conditioning sections should
+                        raise your breathing rate, but you
+                        should still be able to recover
+                        before beginning the next round.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 03 — SESSION STRUCTURE
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    03
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Session structure
+                    </h3>
+
+
+
+                    <!-- ==========================================
+                         WARM-UP
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Warm-up
+                            </span>
+
+                            <strong>
+                                6–8 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Start with easy movement and
+                            gradually increase the pace
+                            before beginning the main
+                            workout.
+                        </p>
+
+
+                        <ul class="train-article-list">
+
+                            <li>
+                                Brisk walking or light marching
+                            </li>
+
+                            <li>
+                                Bodyweight squats
+                            </li>
+
+                            <li>
+                                Alternating reverse lunges
+                            </li>
+
+                            <li>
+                                Arm circles
+                            </li>
+
+                            <li>
+                                Hip and shoulder mobility
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 01
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Goblet Squat
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    3 sets · 10–12 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Hold a dumbbell or kettlebell
+                            close to your chest. Lower with
+                            control, keep your feet firmly
+                            planted and return smoothly to
+                            standing.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 02
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Dumbbell Romanian Deadlift
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    3 sets · 10–12 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Keep the dumbbells close to
+                            your legs as you push your hips
+                            backward. Maintain control
+                            through the movement and return
+                            to standing without rushing.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 03
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Incline Push-Up
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2–3 sets · 8–12 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Place your hands securely on
+                            the bench and keep your body
+                            aligned as you lower yourself
+                            toward the surface. Press back
+                            up with controlled movement.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 04
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    One-Arm Dumbbell Row
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2–3 sets · 10 reps each side
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Use the bench for support and
+                            pull the dumbbell toward your
+                            side while keeping your torso
+                            stable. Lower it slowly before
+                            repeating.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 05
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                05
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Kettlebell Deadlift
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2–3 sets · 10–12 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Stand with the kettlebell
+                            between your feet. Hinge at the
+                            hips, keep the weight close to
+                            your body and return to standing
+                            with a controlled hip drive.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         EXERCISE 06
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                06
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Standing March
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 rounds · 45–60 sec
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            March continuously at a steady
+                            pace, lifting the knees
+                            comfortably and allowing the
+                            arms to move naturally.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         CONDITIONING
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Conditioning
+                            </span>
+
+                            <strong>
+                                8–12 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Alternate periods of moderate
+                            movement with short recovery
+                            periods. Keep the pace
+                            challenging but repeatable.
+                        </p>
+
+
+                        <ul class="train-article-list">
+
+                            <li>
+                                40 sec brisk movement
+                            </li>
+
+                            <li>
+                                20 sec easy recovery
+                            </li>
+
+                            <li>
+                                Repeat for 8–12 rounds
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         COOL-DOWN
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Cool-down
+                            </span>
+
+                            <strong>
+                                5 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Reduce the pace gradually with
+                            easy walking, relaxed breathing
+                            and gentle stretches.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 04 — FOCUS ON CONSISTENCY
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    04
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Focus on consistency
+                    </h3>
+
+
+                    <p>
+                        A routine that you can repeat
+                        regularly is more useful than
+                        making every session as difficult
+                        as possible. Build the habit first,
+                        then gradually increase the amount
+                        of work you can perform comfortably.
+                    </p>
+
+
+                    <div class="train-progression">
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 01
+                            </span>
+
+                            <p>
+                                Complete the routine at a
+                                steady pace and learn how
+                                each exercise feels.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 02
+                            </span>
+
+                            <p>
+                                Gradually increase
+                                repetitions or reduce rest
+                                slightly when the session
+                                begins to feel easier.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 03
+                            </span>
+
+                            <p>
+                                Add a small amount of
+                                resistance or extend the
+                                conditioning block while
+                                keeping the session
+                                manageable.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p>
+                        Progress does not have to come from
+                        doing more every time. Completing
+                        sessions more regularly, recovering
+                        better and maintaining a steady
+                        pace are also meaningful signs of
+                        improvement.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 05 — EQUIPMENT
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    05
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Equipment used
+                    </h3>
+
+
+                    <p>
+                        This routine combines simple
+                        resistance equipment with
+                        bodyweight movement to keep the
+                        session flexible and easy to
+                        repeat.
+                    </p>
+
+
+                    <ul class="train-article-list">
+
+                        <li>
+                            Dumbbells
+                        </li>
+
+                        <li>
+                            Kettlebells
+                        </li>
+
+                        <li>
+                            Adjustable Weight Bench
+                        </li>
+
+                        <li>
+                            Yoga Mat
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE FOOTER
+        =================================================== -->
+
+        <footer class="train-article-footer">
+
+            <span>
+                Alphonsians' Gym
+            </span>
+
+            <span>
+                Weight Control
+            </span>
+
+        </footer>
+
+
+    </div>
+
+
+</article>
+
+
+
+<!-- ==================================================
+     04 — ENDURANCE
+=================================================== -->
+
+<article
+    class="train-plan-card"
+    data-plan-index="3"
+    data-plan-name="Endurance"
+    aria-labelledby="enduranceTitle"
+    aria-hidden="true"
+>
+
+
+    <!-- BACKGROUND -->
+
+    <figure
+        class="train-plan-background"
+        aria-hidden="true"
+    >
+
+        <img
+            src="./img/endurance-workout.png"
+            alt=""
+        >
+
+    </figure>
+
+
+    <div
+        class="train-plan-overlay"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- SCROLLABLE ARTICLE -->
+
+    <div
+        class="train-article-scroll"
+        data-article-scroll
+        tabindex="-1"
+    >
+
+
+        <!-- ==================================================
+             ARTICLE HEADER
+        =================================================== -->
+
+        <header class="train-article-header">
+
+    <div class="train-article-meta">
+
+        <span>
+            #4
+        </span>
+
+        <span>
+            Workout Guide
+        </span>
+
+    </div>
+
+
+    <a
+        href="./downloads/endurance-training-plan.pdf"
+        class="train-download"
+        download
+        aria-label="Download Endurance Training plan as PDF"
+    >
+
+        <span>
+            Download
+        </span>
+
+        <span aria-hidden="true">
+            ↓
+        </span>
+
+    </a>
+
+</header>
+
+
+
+        <!-- ==================================================
+             ARTICLE INTRO
+        =================================================== -->
+
+        <div class="train-article-intro">
+
+            <p class="train-article-eyebrow">
+                Endurance Training
+            </p>
+
+
+            <h2 id="enduranceTitle">
+
+                BUILD STAMINA.
+
+                <span>
+                    KEEP MOVING.
+                </span>
+
+            </h2>
+
+
+            <p class="train-article-lead">
+                Improve stamina through steady movement,
+                controlled intervals and gradual increases
+                in how long you can stay active.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE BODY
+        =================================================== -->
+
+        <div class="train-article-body">
+
+
+
+            <!-- ==================================================
+                 01 — OVERVIEW
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    01
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Overview
+                    </h3>
+
+
+                    <p>
+                        This plan is designed to improve
+                        your ability to keep moving for
+                        longer periods without becoming
+                        overly fatigued. It combines steady
+                        activity with moderate intervals so
+                        that stamina and recovery can
+                        develop gradually over time.
+                    </p>
+
+
+                    <div class="train-article-details">
+
+                        <div>
+
+                            <span>
+                                Frequency
+                            </span>
+
+                            <strong>
+                                2–3 sessions / week
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Duration
+                            </span>
+
+                            <strong>
+                                35–55 minutes
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Level
+                            </span>
+
+                            <strong>
+                                Beginner–Intermediate
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Begin with an amount of activity
+                        that feels manageable and leave
+                        enough recovery time between
+                        sessions. As your stamina improves,
+                        gradually extend how long you move
+                        before increasing the intensity.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 02 — TRAINING APPROACH
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    02
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Training approach
+                    </h3>
+
+
+                    <p>
+                        Endurance training should feel
+                        challenging enough to raise your
+                        breathing rate while still allowing
+                        you to remain in control. Most of
+                        the session should be performed at
+                        a pace that you can sustain rather
+                        than at maximum effort.
+                    </p>
+
+
+                    <div class="train-prescription">
+
+                        <span>
+                            General guide
+                        </span>
+
+                        <strong>
+                            Moderate pace · Controlled intervals · Gradual recovery
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        During steady sections, aim for a
+                        pace where speaking a short sentence
+                        is still possible. During intervals,
+                        increase the effort slightly before
+                        returning to an easier pace for
+                        recovery.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 03 — SESSION STRUCTURE
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    03
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Session structure
+                    </h3>
+
+
+
+                    <!-- ==========================================
+                         WARM-UP
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Warm-up
+                            </span>
+
+                            <strong>
+                                6–8 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Begin slowly and gradually
+                            increase your movement before
+                            starting the main endurance
+                            work.
+                        </p>
+
+
+                        <ul class="train-article-list">
+
+                            <li>
+                                Easy walking or marching
+                            </li>
+
+                            <li>
+                                Arm swings and circles
+                            </li>
+
+                            <li>
+                                Gentle knee lifts
+                            </li>
+
+                            <li>
+                                Bodyweight squats
+                            </li>
+
+                            <li>
+                                Hip and ankle mobility
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         BLOCK 01
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Steady Movement
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    10–15 min
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Maintain continuous movement at
+                            an easy-to-moderate pace. Use
+                            brisk walking, marching or
+                            another comfortable movement
+                            that allows you to stay active
+                            without stopping.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         BLOCK 02
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Jump Rope or Simulated Skipping
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    6 rounds · 30 sec work / 30 sec easy
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Use a jump rope if comfortable,
+                            or perform the same rhythm
+                            without the rope. Keep the pace
+                            controlled and use the recovery
+                            period to bring your breathing
+                            back down.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         BLOCK 03
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Bodyweight Squat
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 rounds · 12–15 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Keep a steady rhythm rather than
+                            rushing the repetitions. Lower
+                            with control and return to
+                            standing while maintaining
+                            relaxed breathing.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         BLOCK 04
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Resistance Band Row
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 rounds · 12–15 reps
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Pull the band toward your body
+                            with a controlled rhythm and
+                            return slowly. Choose resistance
+                            that allows you to keep moving
+                            without straining.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         BLOCK 05
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                05
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Alternating Reverse Lunge
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 rounds · 8–10 reps each side
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            Step backward into a comfortable
+                            lunge and return to standing.
+                            Alternate sides while keeping
+                            the pace steady and controlled.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         BLOCK 06
+                    =========================================== -->
+
+                    <div class="train-exercise">
+
+                        <div class="train-exercise-top">
+
+                            <span class="train-exercise-number">
+                                06
+                            </span>
+
+                            <div>
+
+                                <h4>
+                                    Standing March
+                                </h4>
+
+                                <span class="train-exercise-meta">
+                                    2 rounds · 60 sec
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            March continuously at a steady
+                            rhythm while maintaining an
+                            upright posture. Use this as
+                            active recovery between harder
+                            movements if needed.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         INTERVAL BLOCK
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Endurance intervals
+                            </span>
+
+                            <strong>
+                                8–12 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Finish the main portion of the
+                            session by alternating moderate
+                            effort with easier active
+                            recovery.
+                        </p>
+
+
+                        <ul class="train-article-list">
+
+                            <li>
+                                45 sec moderate movement
+                            </li>
+
+                            <li>
+                                30 sec easy movement
+                            </li>
+
+                            <li>
+                                Repeat for 6–8 rounds
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- ==========================================
+                         COOL-DOWN
+                    =========================================== -->
+
+                    <div class="train-workout-block">
+
+                        <div class="train-workout-heading">
+
+                            <span>
+                                Cool-down
+                            </span>
+
+                            <strong>
+                                5–8 min
+                            </strong>
+
+                        </div>
+
+
+                        <p>
+                            Gradually reduce the pace with
+                            easy walking or marching. Finish
+                            with relaxed breathing and
+                            gentle mobility once your
+                            breathing begins to settle.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 04 — BUILD PROGRESSIVELY
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    04
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Build progressively
+                    </h3>
+
+
+                    <p>
+                        Endurance improves when the body is
+                        given slightly more work over time
+                        without increasing everything at
+                        once. Begin by becoming comfortable
+                        with the current session before
+                        extending the duration or increasing
+                        the pace.
+                    </p>
+
+
+                    <div class="train-progression">
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 01
+                            </span>
+
+                            <p>
+                                Establish a steady pace that
+                                you can maintain throughout
+                                the planned session.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 02
+                            </span>
+
+                            <p>
+                                Add a few minutes to the
+                                steady movement or complete
+                                an additional interval when
+                                the current session feels
+                                manageable.
+                            </p>
+
+                        </div>
+
+
+                        <div class="train-progression-item">
+
+                            <span>
+                                Step 03
+                            </span>
+
+                            <p>
+                                Gradually increase the pace
+                                or shorten the recovery
+                                periods while keeping your
+                                movement controlled.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <p>
+                        Increase only one element at a time.
+                        Longer sessions, faster intervals
+                        and shorter recovery periods are
+                        all forms of progression, but they
+                        do not need to be introduced
+                        together.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 05 — EQUIPMENT
+            =================================================== -->
+
+            <section class="train-article-section">
+
+                <span class="train-section-number">
+                    05
+                </span>
+
+
+                <div>
+
+                    <h3>
+                        Equipment used
+                    </h3>
+
+
+                    <p>
+                        Most of this routine can be
+                        completed using bodyweight
+                        movements with a small amount of
+                        equipment for variety and
+                        resistance.
+                    </p>
+
+
+                    <ul class="train-article-list">
+
+                        <li>
+                            Jump Rope
+                        </li>
+
+                        <li>
+                            Resistance Bands
+                        </li>
+
+                        <li>
+                            Yoga Mat
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ARTICLE FOOTER
+        =================================================== -->
+
+        <footer class="train-article-footer">
+
+            <span>
+                Alphonsians' Gym
+            </span>
+
+            <span>
+                Endurance
+            </span>
+
+        </footer>
+
+
+    </div>
+
+
+</article>
+
+
+                    </div>
+                    <!-- /.train-plan-track -->
+
+
+                </div>
+                <!-- /.train-plan-viewport -->
+
+
+            </div>
+            <!-- /.train-reader-pane -->
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

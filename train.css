@@ -1,0 +1,1891 @@
+/* ============================================================
+   ALPHONSIANS' GYM
+   TRAIN PAGE — TRAIN.CSS
+============================================================ */
+
+
+/* ============================================================
+   01. PAGE
+============================================================ */
+
+html,
+body {
+    width: 100%;
+}
+
+
+.train-page {
+    margin: 0;
+
+    overflow-x: hidden;
+
+    background: var(--navy);
+    color: var(--white);
+}
+
+
+.train-main {
+    width: 100%;
+}
+
+
+gym-navbar {
+    display: block;
+}
+
+
+/* ============================================================
+   02. TRAIN READER
+============================================================ */
+
+.train-reader {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    align-items: end;
+
+    grid-template-columns:
+        minmax(0, 40%)
+        minmax(0, 60%);
+
+    overflow: hidden;
+
+    background: var(--navy);
+}
+
+
+/* ============================================================
+   03. LEFT — STATIC HERO
+============================================================ */
+
+.train-reader-hero {
+    min-width: 0;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 72px;
+    padding-bottom: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    background: var(--light);
+    color: var(--navy);
+}
+
+
+/* ============================================================
+   04. HERO HEADER
+============================================================ */
+
+.train-hero-header {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-xl);
+
+    color: var(--navy);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: var(--line-meta);
+
+    letter-spacing: var(--tracking-meta);
+
+    text-transform: uppercase;
+}
+
+
+.train-plan-count {
+    color: var(--navy);
+}
+
+
+/* ============================================================
+   05. HERO MAIN
+============================================================ */
+
+.train-hero-main {
+    width: 100%;
+    max-width: 640px;
+
+    margin-block: auto;
+
+    padding-block: var(--space-2xl);
+}
+
+
+/* ------------------------------------------------------------
+   TITLE
+------------------------------------------------------------- */
+
+.train-hero-title {
+    max-width: 640px;
+
+    margin: 0;
+
+    color: var(--navy);
+
+    font-family: var(--font-display);
+
+    font-size:
+        clamp(
+            4rem,
+            4.8vw,
+            6.4rem
+        );
+
+    font-weight: var(--weight-bold);
+
+    line-height: 0.88;
+
+    letter-spacing: var(--display-tracking);
+
+    text-transform: uppercase;
+}
+
+
+.train-hero-title span {
+    display: block;
+
+    color: var(--gold);
+}
+
+
+/* ------------------------------------------------------------
+   COPY
+------------------------------------------------------------- */
+
+.train-hero-copy {
+    max-width: 470px;
+
+    margin:
+        clamp(
+            40px,
+            5vh,
+            64px
+        )
+        0
+        0;
+
+    color: var(--navy-72);
+
+    font-size: var(--text-s);
+
+    line-height: var(--line-body);
+}
+
+
+/* ============================================================
+   06. HERO FOOTER
+============================================================ */
+
+.train-hero-footer {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: var(--space-xl);
+}
+
+
+/* ------------------------------------------------------------
+   CURRENT PLAN
+------------------------------------------------------------- */
+
+.train-current-plan {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-xs);
+}
+
+
+.train-current-label {
+    color: var(--navy-48);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: 1;
+
+    letter-spacing: var(--tracking-meta);
+
+    text-transform: uppercase;
+}
+
+
+.train-current-plan strong {
+    color: var(--navy);
+
+    font-family: var(--font-display);
+    font-size: var(--text-l);
+    font-weight: var(--weight-medium);
+
+    line-height: 1;
+
+    letter-spacing: -0.035em;
+}
+
+
+/* ============================================================
+   07. PLAN CONTROLS
+============================================================ */
+
+.train-plan-controls {
+    display: flex;
+
+    gap: var(--space-xs);
+}
+
+
+.train-plan-control {
+    width: var(--control-size);
+    height: var(--control-size);
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border:
+        var(--border-width)
+        solid
+        var(--navy-42);
+
+    background: transparent;
+    color: var(--navy);
+
+    font-family: var(--font-display);
+    font-size: var(--text-m);
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition),
+        transform var(--transition),
+        opacity var(--transition);
+}
+
+
+.train-plan-control:hover:not(:disabled) {
+    border-color: var(--gold);
+
+    background: var(--gold);
+    color: var(--navy);
+
+    transform: translateY(-2px);
+}
+
+
+.train-plan-control:disabled {
+    opacity: 0.28;
+
+    cursor: default;
+}
+
+
+.train-plan-control:focus-visible {
+    outline:
+        2px
+        solid
+        var(--gold);
+
+    outline-offset: var(--space-2xs);
+}
+
+
+/* ============================================================
+   08. RIGHT — READER PANE
+============================================================ */
+
+.train-reader-pane {
+    position: relative;
+
+    min-width: 0;
+    min-height: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 85px;
+
+    overflow: hidden;
+
+    background: var(--navy);
+}
+
+
+/* ============================================================
+   09. PLAN VIEWPORT
+============================================================ */
+
+.train-plan-viewport {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    background: var(--navy);
+
+    cursor: grab;
+
+    touch-action: pan-y;
+
+    user-select: none;
+}
+
+
+.train-plan-viewport.is-dragging {
+    cursor: grabbing;
+}
+
+
+/* ============================================================
+   10. PLAN TRACK
+============================================================ */
+
+.train-plan-track {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    transform: translate3d(0, 0, 0);
+
+    transition:
+        transform
+        800ms
+        var(--ease);
+
+    will-change: transform;
+}
+
+
+.train-plan-track.is-dragging {
+    transition: none;
+}
+
+
+/* ============================================================
+   11. PLAN CARD
+============================================================ */
+
+.train-plan-card {
+    position: relative;
+
+    flex:
+        0
+        0
+        100%;
+
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+
+    background: var(--navy);
+    color: var(--white);
+
+    isolation: isolate;
+}
+
+
+.train-plan-card[aria-hidden="true"] {
+    pointer-events: none;
+}
+
+
+.train-plan-card.active {
+    pointer-events: auto;
+}
+
+
+/* ============================================================
+   12. BACKGROUND IMAGE
+============================================================ */
+
+.train-plan-background {
+    position: absolute;
+
+    z-index: -3;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    background: var(--navy);
+}
+
+
+.train-plan-background img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: scale(1.045);
+
+    transition:
+        transform
+        1.2s
+        var(--ease);
+
+    will-change: transform;
+}
+
+
+.train-plan-card.active
+.train-plan-background img {
+    transform: scale(1);
+}
+
+
+/* ============================================================
+   13. BACKGROUND OVERLAY
+============================================================ */
+
+.train-plan-overlay {
+    position: absolute;
+
+    z-index: -2;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+
+            rgba(12, 35, 64, 0.40) 0%,
+
+            rgba(12, 35, 64, 0.46) 18%,
+
+            rgba(12, 35, 64, 0.62) 42%,
+
+            rgba(12, 35, 64, 0.88) 68%,
+
+            rgba(12, 35, 64, 0.98) 100%
+        );
+}
+
+
+.train-plan-overlay::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to right,
+
+            rgba(12, 35, 64, 0.22),
+
+            rgba(12, 35, 64, 0.05) 55%,
+
+            rgba(12, 35, 64, 0.18)
+        );
+}
+
+
+/* ============================================================
+   14. ARTICLE SCROLL
+============================================================ */
+
+.train-article-scroll {
+    position: relative;
+
+    background-color: rgb( 12 35 64/ 0.8);
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    padding:
+        clamp(
+            48px,
+            4vw,
+            72px
+        )
+        clamp(
+            48px,
+            5vw,
+            88px
+        )
+        clamp(
+            72px,
+            6vw,
+            108px
+        );
+
+    /*
+       Prevent horizontal drag gestures from fighting
+       the vertical article content.
+    */
+
+    touch-action: pan-y;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+}
+
+
+.train-article-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ============================================================
+   ARTICLE HEADER
+============================================================ */
+
+.train-article-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-xl);
+
+    padding-bottom: var(--space-l);
+
+    border-bottom:
+        var(--border-width)
+        solid
+        var(--border-light);
+}
+
+
+/* META */
+
+.train-article-meta {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-xl);
+
+    color: var(--white-74);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: var(--line-meta);
+
+    letter-spacing: var(--tracking-meta);
+
+    text-transform: uppercase;
+}
+
+
+.train-article-meta span:first-child {
+    color: var(--gold);
+}
+
+
+/* ============================================================
+   DOWNLOAD
+============================================================ */
+
+.train-download {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: var(--space-xs);
+
+    padding-bottom: var(--space-2xs);
+
+    color: var(--white);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: 1;
+
+    letter-spacing: var(--tracking-small);
+
+    text-transform: uppercase;
+
+    transition:
+        gap
+        var(--transition),
+        color
+        var(--transition);
+}
+
+
+.train-download::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: var(--border-width);
+
+    background: currentColor;
+
+    transform: scaleX(1);
+
+    transform-origin: left;
+
+    transition:
+        transform
+        var(--transition);
+}
+
+
+.train-download > span:last-child {
+    color: var(--gold);
+
+    font-size: var(--text-s);
+
+    transition:
+        transform
+        var(--transition);
+}
+
+
+.train-download:hover {
+    gap: var(--space-m);
+
+    color: var(--gold);
+}
+
+
+.train-download:hover > span:last-child {
+    transform: translateY(4px);
+}
+
+
+/* ============================================================
+   16. ARTICLE INTRO
+============================================================ */
+
+.train-article-intro {
+    width: 100%;
+    max-width: 820px;
+
+    padding:
+        clamp(
+            100px,
+            14vh,
+            158px
+        )
+        0
+        clamp(
+            88px,
+            11vh,
+            132px
+        );
+}
+
+
+/* ------------------------------------------------------------
+   EYEBROW
+------------------------------------------------------------- */
+
+.train-article-eyebrow {
+    margin:
+        0
+        0
+        var(--space-l);
+
+    color: var(--white-68);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: var(--line-meta);
+
+    letter-spacing: var(--tracking-meta);
+
+    text-transform: uppercase;
+}
+
+
+/* ------------------------------------------------------------
+   TITLE
+------------------------------------------------------------- */
+
+.train-article-intro h2 {
+    max-width: 840px;
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-family: var(--font-display);
+
+    font-size:
+        clamp(
+            3.3rem,
+            4.2vw,
+            5.8rem
+        );
+
+    font-weight: var(--weight-bold);
+
+    line-height: 0.88;
+
+    letter-spacing: var(--display-tracking);
+
+    text-transform: uppercase;
+}
+
+
+.train-article-intro h2 span {
+    display: block;
+
+    color: var(--gold);
+}
+
+
+/* ------------------------------------------------------------
+   LEAD
+------------------------------------------------------------- */
+
+.train-article-lead {
+    max-width: 520px;
+
+    margin:
+        clamp(
+            38px,
+            5vh,
+            58px
+        )
+        0
+        0;
+
+    color: var(--white-82);
+
+    font-family: var(--font-display);
+    font-size: var(--text-m);
+    font-weight: var(--weight-regular);
+
+    line-height: 1.4;
+}
+
+
+/* ============================================================
+   17. ARTICLE BODY
+============================================================ */
+
+.train-article-body {
+    width: 100%;
+
+    border-top:
+        var(--border-width)
+        solid
+        var(--border-light);
+}
+
+
+/* ============================================================
+   18. ARTICLE SECTION
+============================================================ */
+
+.train-article-section {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        54px
+        minmax(0, 1fr);
+
+    gap: var(--space-xl);
+
+    padding:
+        clamp(
+            38px,
+            4vw,
+            58px
+        )
+        0;
+
+    border-bottom:
+        var(--border-width)
+        solid
+        var(--border-light);
+}
+
+
+/* ------------------------------------------------------------
+   NUMBER
+------------------------------------------------------------- */
+
+.train-section-number {
+    padding-top: 4px;
+
+    color: var(--gold);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: 1;
+
+    letter-spacing: var(--tracking-small);
+}
+
+
+/* ------------------------------------------------------------
+   SECTION TITLE
+------------------------------------------------------------- */
+
+.train-article-section h3 {
+    margin:
+        0
+        0
+        var(--space-m);
+
+    color: var(--white);
+
+    font-family: var(--font-display);
+
+    font-size:
+        clamp(
+            1.35rem,
+            1.6vw,
+            1.8rem
+        );
+
+    font-weight: var(--weight-medium);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.035em;
+}
+
+
+/* ------------------------------------------------------------
+   SECTION COPY
+------------------------------------------------------------- */
+
+.train-article-section p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--white-74);
+
+    font-size: var(--text-s);
+
+    line-height: var(--line-body);
+}
+
+
+/* ============================================================
+   19. ARTICLE LIST
+============================================================ */
+
+.train-article-list {
+    max-width: 650px;
+
+    display: grid;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.train-article-list li {
+    position: relative;
+
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    padding:
+        var(--space-s)
+        0
+        var(--space-s)
+        var(--space-l);
+
+    border-bottom:
+        var(--border-width)
+        solid
+        rgba(255, 255, 255, 0.12);
+
+    color: var(--white-82);
+
+    font-size: var(--text-s);
+
+    line-height: var(--line-copy);
+}
+
+
+.train-article-list li:last-child {
+    border-bottom: 0;
+}
+
+
+.train-article-list li::before {
+    content: "↳";
+
+    position: absolute;
+
+    left: 0;
+
+    color: var(--gold);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+}
+
+
+/* ============================================================
+   20. ARTICLE FOOTER
+============================================================ */
+
+.train-article-footer {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--space-xl);
+
+    padding-top:
+        clamp(
+            56px,
+            7vw,
+            92px
+        );
+
+    color: var(--white-48);
+
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+
+    line-height: var(--line-meta);
+
+    letter-spacing: var(--tracking-meta);
+
+    text-transform: uppercase;
+}
+
+
+/* ============================================================
+   21. HOVER
+============================================================ */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .train-plan-card.active:hover
+    .train-plan-background img {
+        transform: scale(1.018);
+    }
+
+}
+
+
+/* ============================================================
+   22. DRAGGING
+============================================================ */
+
+.train-plan-viewport.is-dragging,
+.train-plan-viewport.is-dragging * {
+    cursor: grabbing;
+}
+
+
+.train-plan-viewport.is-dragging
+.train-plan-background img {
+    transition: none;
+}
+
+
+/* ============================================================
+   23. ACCESSIBILITY
+============================================================ */
+
+.train-article-scroll:focus-visible {
+    outline:
+        2px
+        solid
+        var(--gold);
+
+    outline-offset: -4px;
+}
+
+
+/* ============================================================
+   24. REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .train-plan-track,
+    .train-plan-background img,
+    .train-plan-control {
+        transition: none;
+    }
+
+}
+
+/* ============================================================
+   25. RESPONSIVE
+============================================================ */
+
+
+/* ============================================================
+   COMPACT DESKTOP / LAPTOP
+   1101px — 1400px
+
+   Preserve the desktop split layout, but reduce the
+   generous desktop padding before reaching tablet mode.
+============================================================ */
+
+@media (min-width: 1101px) and (max-width: 1400px) {
+
+    .train-reader-hero {
+        padding-top: 72px;
+        padding-bottom: 52px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+
+    .train-hero-main {
+        max-width: 520px;
+    }
+
+
+    .train-hero-title {
+        font-size:
+            clamp(
+                3.6rem,
+                4.6vw,
+                5.6rem
+            );
+    }
+
+
+    .train-hero-copy {
+        max-width: 400px;
+    }
+
+
+    .train-article-scroll {
+        padding:
+            52px
+            56px
+            80px;
+    }
+
+
+    .train-article-intro {
+        padding:
+            clamp(
+                88px,
+                12vh,
+                130px
+            )
+            0
+            clamp(
+                76px,
+                9vh,
+                110px
+            );
+    }
+
+
+    .train-article-intro h2 {
+        font-size:
+            clamp(
+                3.2rem,
+                4vw,
+                5rem
+            );
+    }
+
+}
+
+
+
+/* ============================================================
+   TABLET
+   <= 1100px
+
+   The desktop 40 / 60 reader becomes a vertical editorial
+   sequence. The introduction is a full-width section and the
+   article carousel becomes its own contained reading viewport.
+============================================================ */
+
+@media (max-width: 1100px) {
+
+    .train-page {
+        background: var(--light);
+    }
+
+
+    .train-main {
+        width: 100%;
+    }
+
+
+    /* --------------------------------------------------------
+       READER
+    --------------------------------------------------------- */
+
+    .train-reader {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        overflow: visible;
+
+        background: var(--light);
+    }
+
+
+    /* --------------------------------------------------------
+       INTRO / HERO
+    --------------------------------------------------------- */
+
+    .train-reader-hero {
+        width: 100%;
+        height: auto;
+        min-height:
+            clamp(
+                540px,
+                66svh,
+                680px
+            );
+
+        padding:
+            calc(var(--header-height) + 40px)
+            40px
+            40px;
+
+        background: var(--light);
+    }
+
+
+    .train-hero-main {
+        width: 100%;
+        max-width: 780px;
+
+        margin-block: auto;
+
+        padding-block: 44px;
+    }
+
+
+    .train-hero-title {
+        max-width: 780px;
+
+        font-size:
+            clamp(
+                3.9rem,
+                8.5vw,
+                6.3rem
+            );
+    }
+
+
+    .train-hero-copy {
+        max-width: 590px;
+
+        margin-top: 32px;
+    }
+
+
+    .train-hero-footer {
+        align-items: center;
+    }
+
+
+    .train-current-plan strong {
+        font-size: 22px;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE READER
+    --------------------------------------------------------- */
+
+    .train-reader-pane {
+        width: 100%;
+        height:
+            clamp(
+                680px,
+                calc(100svh - 24px),
+                920px
+            );
+        min-height: 680px;
+
+        padding-top: 0;
+    }
+
+
+    .train-plan-viewport,
+    .train-plan-track,
+    .train-plan-card {
+        height: 100%;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE
+    --------------------------------------------------------- */
+
+    .train-article-scroll {
+        padding:
+            44px
+            40px
+            72px;
+
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-y: contain;
+    }
+
+
+    .train-article-intro {
+        max-width: 780px;
+
+        padding:
+            84px
+            0
+            72px;
+    }
+
+
+    .train-article-intro h2 {
+        max-width: 780px;
+
+        font-size:
+            clamp(
+                3.35rem,
+                7.4vw,
+                5.4rem
+            );
+    }
+
+
+    .train-article-lead {
+        max-width: 580px;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE SECTIONS
+    --------------------------------------------------------- */
+
+    .train-article-section {
+        grid-template-columns:
+            44px
+            minmax(0, 1fr);
+
+        gap: 24px;
+
+        padding:
+            40px
+            0;
+    }
+
+
+    .train-article-section p,
+    .train-article-list {
+        max-width: 720px;
+    }
+
+
+    /* --------------------------------------------------------
+       LONG / RICH ARTICLE CONTENT
+    --------------------------------------------------------- */
+
+    .train-article-details,
+    .train-prescription,
+    .train-workout-block,
+    .train-exercise,
+    .train-progression {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    .train-article-details strong,
+    .train-prescription strong,
+    .train-exercise-meta {
+        overflow-wrap: anywhere;
+    }
+
+}
+
+
+
+/* ============================================================
+   PORTRAIT TABLET
+   <= 900px
+============================================================ */
+
+@media (max-width: 900px) {
+
+    .train-reader-hero {
+        min-height: 520px;
+
+        padding-top:
+            calc(var(--header-height) + 36px);
+        padding-bottom: 36px;
+    }
+
+
+    .train-hero-main {
+        max-width: 700px;
+
+        padding-block: 36px;
+    }
+
+
+    .train-hero-title {
+        max-width: 700px;
+
+        font-size:
+            clamp(
+                3.6rem,
+                9.5vw,
+                5.5rem
+            );
+    }
+
+
+    .train-hero-copy {
+        max-width: 520px;
+
+        margin-top: 28px;
+    }
+
+
+    .train-reader-pane {
+        height:
+            clamp(
+                660px,
+                90svh,
+                840px
+            );
+        min-height: 660px;
+    }
+
+
+    .train-article-intro {
+        padding:
+            72px
+            0
+            64px;
+    }
+
+
+    .train-article-intro h2 {
+        font-size:
+            clamp(
+                3.1rem,
+                8.5vw,
+                4.8rem
+            );
+    }
+
+}
+
+
+
+/* ============================================================
+   MOBILE
+   <= 720px
+============================================================ */
+
+@media (max-width: 720px) {
+
+    /* --------------------------------------------------------
+       INTRO / HERO
+    --------------------------------------------------------- */
+
+    .train-reader-hero {
+        min-height:
+            max(
+                500px,
+                72svh
+            );
+
+        padding:
+            calc(var(--header-height) + 28px)
+            20px
+            28px;
+    }
+
+
+    .train-hero-footer {
+        gap: 16px;
+    }
+
+
+    .train-current-plan {
+        gap: 6px;
+    }
+
+
+    .train-current-label,
+    .train-hero-header {
+        font-size: 12px;
+    }
+
+
+    .train-current-plan strong {
+        font-size: 20px;
+    }
+
+
+    .train-plan-controls {
+        gap: 8px;
+    }
+
+
+    .train-plan-control {
+        width: 44px;
+        height: 44px;
+
+        font-size: 18px;
+    }
+
+
+    .train-hero-main {
+        width: 100%;
+
+        padding-block: 28px;
+    }
+
+
+    .train-hero-title {
+        max-width: 100%;
+
+        font-size:
+            clamp(
+                2.9rem,
+                12.5vw,
+                4.2rem
+            );
+
+        line-height: 0.9;
+    }
+
+
+    .train-hero-copy {
+        max-width: 430px;
+
+        margin-top: 24px;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE VIEWPORT
+    --------------------------------------------------------- */
+
+    .train-reader-pane {
+        height: 100svh;
+        min-height: 620px;
+        max-height: 880px;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE SCROLL
+    --------------------------------------------------------- */
+
+    .train-article-scroll {
+        padding:
+            28px
+            20px
+            52px;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE HEADER
+    --------------------------------------------------------- */
+
+    .train-article-header {
+        gap: 14px;
+
+        padding-bottom: 18px;
+    }
+
+
+    .train-article-meta {
+        gap: 10px;
+
+        font-size: 12px;
+
+        letter-spacing: 0.06em;
+    }
+
+
+    .train-download {
+        gap: 6px;
+
+        flex-shrink: 0;
+
+        font-size: 12px;
+
+        letter-spacing: 0.05em;
+    }
+
+
+    .train-download > span:last-child {
+        font-size: 16px;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE INTRO
+    --------------------------------------------------------- */
+
+    .train-article-intro {
+        max-width: 100%;
+
+        padding:
+            58px
+            0
+            50px;
+    }
+
+
+    .train-article-eyebrow {
+        margin-bottom: 16px;
+
+        font-size: 12px;
+    }
+
+
+    .train-article-intro h2 {
+        max-width: 100%;
+
+        font-size:
+            clamp(
+                2.7rem,
+                11.8vw,
+                3.9rem
+            );
+
+        line-height: 0.9;
+    }
+
+
+    .train-article-lead {
+        max-width: 100%;
+
+        margin-top: 28px;
+
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE SECTIONS
+    --------------------------------------------------------- */
+
+    .train-article-section {
+        grid-template-columns:
+            28px
+            minmax(0, 1fr);
+
+        gap: 14px;
+
+        padding:
+            32px
+            0;
+    }
+
+
+    .train-section-number {
+        padding-top: 3px;
+
+        font-size: 12px;
+    }
+
+
+    .train-article-section h3 {
+        margin-bottom: 14px;
+
+        font-size: 1.25rem;
+    }
+
+
+    .train-article-section p {
+        max-width: 100%;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    /* --------------------------------------------------------
+       LISTS
+    --------------------------------------------------------- */
+
+    .train-article-list {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .train-article-list li {
+        min-height: 44px;
+
+        padding:
+            10px
+            0
+            10px
+            20px;
+
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+
+    /* --------------------------------------------------------
+       FINISHED ARTICLE CONTENT
+    --------------------------------------------------------- */
+
+    .train-article-details {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .train-prescription {
+        width: 100%;
+
+        display: grid;
+
+        gap: 8px;
+    }
+
+
+    .train-prescription strong {
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    .train-workout-heading,
+    .train-exercise-top {
+        gap: 12px;
+    }
+
+
+    .train-exercise-meta {
+        display: block;
+
+        line-height: 1.45;
+    }
+
+
+    .train-progression {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    /* --------------------------------------------------------
+       ARTICLE FOOTER
+    --------------------------------------------------------- */
+
+    .train-article-footer {
+        gap: 16px;
+
+        padding-top: 48px;
+
+        font-size: 12px;
+        letter-spacing: 0.06em;
+    }
+
+}
+
+
+
+/* ============================================================
+   COMPACT MOBILE
+   <= 480px
+============================================================ */
+
+@media (max-width: 480px) {
+
+    .train-reader-hero {
+        min-height: 500px;
+    }
+
+
+    .train-hero-title {
+        font-size:
+            clamp(
+                2.6rem,
+                12.5vw,
+                3.5rem
+            );
+    }
+
+
+    .train-hero-copy {
+        font-size: 14px;
+    }
+
+
+    .train-hero-footer {
+        align-items: flex-end;
+    }
+
+
+    .train-article-header {
+        gap: 10px;
+    }
+
+
+    .train-article-meta {
+        gap: 8px;
+    }
+
+
+    .train-article-scroll {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .train-article-intro h2 {
+        font-size:
+            clamp(
+                2.45rem,
+                11.8vw,
+                3.35rem
+            );
+    }
+
+
+    .train-article-section {
+        grid-template-columns:
+            24px
+            minmax(0, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .train-article-footer {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+/* ============================================================
+   SHORT LANDSCAPE TABLETS / PHONES
+============================================================ */
+
+@media
+    (max-width: 1100px)
+    and (max-height: 700px)
+    and (orientation: landscape) {
+
+    .train-reader-hero {
+        min-height: 430px;
+
+        padding-top:
+            calc(var(--header-height) + 24px);
+        padding-bottom: 24px;
+    }
+
+
+    .train-hero-main {
+        padding-block: 20px;
+    }
+
+
+    .train-hero-title {
+        font-size:
+            clamp(
+                2.9rem,
+                7vw,
+                4.6rem
+            );
+    }
+
+
+    .train-hero-copy {
+        margin-top: 18px;
+    }
+
+
+    .train-reader-pane {
+        height: 100svh;
+        min-height: 520px;
+    }
+
+}

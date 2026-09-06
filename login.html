@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Student login for Alphonsians' Gym at Alphonsa College, Pala."
+    >
+
+    <title>Student Login | Alphonsians' Gym</title>
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Global Styles -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- Login Styles -->
+
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+
+</head>
+
+
+<body class="login-page">
+
+
+    <main class="login-shell">
+
+        <section
+            class="login-form-section"
+            aria-labelledby="loginTitle"
+        >
+
+            <div class="login-form-wrapper">
+
+
+                <!-- ==================================================
+                     PAGE META
+                =================================================== -->
+
+                <div class="login-top">
+
+                    <a
+                        href="index.html"
+                        class="login-brand"
+                        aria-label="Return to Alphonsians' Gym homepage"
+                    >
+
+                        <img
+                            src="./img/alphonsa-logo.png"
+                            alt=""
+                        >
+
+                        <span>
+                            <strong>
+                                Alphonsians' Gym
+                            </strong>
+
+                            <small>
+                                Alphonsa College, Pala
+                            </small>
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="index.html"
+                        class="login-close"
+                        id="loginClose"
+                        aria-label="Close login and return to home"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="070707"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </a>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     LOGIN CONTENT
+                =================================================== -->
+
+                <div class="login-content">
+
+
+                    <!-- Heading -->
+
+                    <div class="login-form-heading">
+
+                        <span class="login-eyebrow">
+                            ( Student Access )
+                        </span>
+
+
+                        <h1 id="loginTitle">
+                            <span class="welcome-text">WELCOME</span>
+                            <span class="back-text">BACK.</span>
+                        </h1>
+
+
+                        <p>
+                            Log in with your student credentials
+                            to book gym sessions and manage your
+                            upcoming workouts.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         LOGIN FORM
+                    =================================================== -->
+
+                    <form
+                        class="login-form"
+                        id="loginForm"
+                    >
+
+
+                        <!-- Student ID -->
+
+                        <div class="form-field">
+
+                            <label for="studentId">
+                                Student ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentId"
+                                name="studentId"
+                                autocomplete="username"
+                                placeholder="Enter your student ID"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- Password -->
+
+                        <div class="form-field">
+
+                            <div class="field-label-row">
+
+                                <label for="password">
+                                    Password
+                                </label>
+
+                                <a href="">
+                                    Forgot password?
+                                </a>
+
+                            </div>
+
+
+                            <div class="password-field">
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    autocomplete="current-password"
+                                    placeholder="Enter your password"
+                                    required
+                                >
+
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="passwordToggle"
+                                    aria-label="Show password"
+                                    aria-pressed="false"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Remember -->
+
+                        <label class="remember-option">
+
+                            <input
+                                type="checkbox"
+                                name="remember"
+                            >
+
+                            <span
+                                class="custom-checkbox"
+                                aria-hidden="true"
+                            ></span>
+
+                            <span>
+                                Keep me logged in
+                            </span>
+
+                        </label>
+
+
+
+                        <!-- Submit -->
+
+                        <button
+                            type="submit"
+                            class="login-submit"
+                        >
+
+                            <span>
+                                Log in
+                            </span>
+
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+
+                        </button>
+
+
+                        <p
+                            class="login-message"
+                            id="loginMessage"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+
+
+                    <!-- ==================================================
+                         SUPPORT
+                    =================================================== -->
+
+                    <div class="login-support">
+
+                        <span>
+                            Having trouble signing in?
+                        </span>
+
+                        <p>
+                            Contact the
+
+                            <a
+                                href="mailto:alphonsacollegepala@gmail.com?subject=Alphonsians%27%20Gym%20-%20Login%20Support"
+                            >
+                                gym coordinator or college administration
+                            </a>
+
+                            for help accessing your student account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

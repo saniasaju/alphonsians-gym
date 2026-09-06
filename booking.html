@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Book a training session at Alphonsians' Gym, Alphonsa College, Pala."
+    >
+
+    <title>Book a Slot | Alphonsians' Gym</title>
+
+
+    <!-- ======================================================
+         FONTS
+    ======================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ======================================================
+         GLOBAL STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- ======================================================
+         BOOKING STYLES
+    ======================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="booking.css"
+    >
+
+</head>
+
+
+<body class="booking-page">
+
+
+    <!-- ======================================================
+         BOOKING SHELL
+    ======================================================= -->
+
+    <main class="booking-shell">
+
+
+        <!-- ==================================================
+             TOP
+        =================================================== -->
+
+        <div class="login-top">
+
+
+            <!-- Brand -->
+
+            <a
+                href="index.html"
+                class="login-brand"
+                aria-label="Return to Alphonsians' Gym homepage"
+            >
+
+                <img
+                    src="./img/alphonsa-logo.png"
+                    alt=""
+                >
+
+                <span>
+
+                    <strong>
+                        Alphonsians' Gym
+                    </strong>
+
+                    <small>
+                        Alphonsa College, Pala
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <!-- Close -->
+
+            <a
+                href="index.html"
+                class="login-close"
+                id="bookingClose"
+                aria-label="Close booking and return to home"
+            >
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                    />
+                </svg>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             PROGRESS
+        =================================================== -->
+
+        <div
+            class="booking-progress"
+            aria-label="Booking progress"
+        >
+
+            <div
+                class="booking-progress-track"
+                aria-hidden="true"
+            >
+
+                <span id="progressBar"></span>
+
+            </div>
+
+        </div>
+
+        <!-- ==================================================
+             BOOKING VIEWPORT
+        =================================================== -->
+
+        <div
+            class="booking-viewport"
+            id="bookingViewport"
+        >
+
+            <div
+                class="booking-track"
+                id="bookingTrack"
+            >
+
+
+                <!-- ==========================================
+                     STATE 01 — FIND A SLOT
+                =========================================== -->
+
+                <section
+                    class="booking-stage booking-stage--finder active"
+                    data-step="1"
+                    aria-labelledby="bookingTitle"
+                    aria-hidden="false"
+                >
+
+                    <div class="booking-stage-grid">
+
+
+                        <!-- ==================================
+                             LEFT — INTRO
+                        =================================== -->
+
+                        <div class="booking-stage-heading">
+
+                            <span class="stage-eyebrow">
+                                ( Find a Slot )
+                            </span>
+
+
+                            <h1 id="bookingTitle">
+
+                                FIND YOUR
+
+                                <span>
+                                    TIME TO TRAIN.
+                                </span>
+
+                            </h1>
+
+
+                            <p class="booking-intro">
+                                Choose when you want to train and
+                                the equipment you need. We'll check
+                                whether everything is expected to be
+                                available during that session.
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- ==================================
+                             RIGHT — FILTER PANEL
+                        =================================== -->
+
+                        <div
+                            class="booking-filter-panel"
+                            id="bookingFilters"
+                        >
+
+
+                            <!-- ==============================
+                                 01 — WHEN
+                            =============================== -->
+
+                            <div class="filter-group booking-when-group">
+
+
+                                <!-- Label -->
+
+                                <div class="filter-label">
+
+                                    <span>
+                                        01
+                                    </span>
+
+                                    <p>
+                                        When
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- Date + Time -->
+
+                                <div class="booking-when-options">
+
+
+                                    <!-- ======================
+                                         DATE
+                                    ======================= -->
+
+                                    <div class="booking-dropdown date-dropdown">
+
+
+                                        <!-- Date Trigger -->
+
+                                        <button
+                                            type="button"
+                                            class="booking-select"
+                                            id="dateSelect"
+                                            aria-expanded="false"
+                                            aria-controls="dateDropdownPanel"
+                                        >
+
+                                            <span
+                                                class="booking-select-icon"
+                                                aria-hidden="true"
+                                            >
+
+                                                <svg viewBox="0 0 24 24">
+
+                                                    <path
+                                                        d="M7 2v3M17 2v3M3.5 9h17M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2Z"
+                                                    />
+
+                                                </svg>
+
+                                            </span>
+
+
+                                            <span
+                                                class="booking-select-value"
+                                                id="dateSelectValue"
+                                            >
+                                                Select date
+                                            </span>
+
+
+                                            <span
+                                                class="booking-select-chevron"
+                                                aria-hidden="true"
+                                            >
+                                                ↓
+                                            </span>
+
+                                        </button>
+
+
+
+                                        <!-- Calendar Dropdown -->
+
+                                        <div
+                                            class="booking-dropdown-panel calendar-panel"
+                                            id="dateDropdownPanel"
+                                            hidden
+                                        >
+
+
+                                            <!-- Calendar Header -->
+
+                                            <div class="calendar-header">
+
+                                                <button
+                                                    type="button"
+                                                    class="calendar-nav"
+                                                    id="calendarPrevious"
+                                                    aria-label="Previous month"
+                                                >
+                                                    ←
+                                                </button>
+
+
+                                                <strong id="calendarMonth">
+                                                    September 2026
+                                                </strong>
+
+
+                                                <button
+                                                    type="button"
+                                                    class="calendar-nav"
+                                                    id="calendarNext"
+                                                    aria-label="Next month"
+                                                >
+                                                    →
+                                                </button>
+
+                                            </div>
+
+
+
+                                            <!-- Weekdays -->
+
+                                            <div
+                                                class="calendar-weekdays"
+                                                aria-hidden="true"
+                                            >
+
+                                                <span>Su</span>
+                                                <span>Mo</span>
+                                                <span>Tu</span>
+                                                <span>We</span>
+                                                <span>Th</span>
+                                                <span>Fr</span>
+                                                <span>Sa</span>
+
+                                            </div>
+
+
+
+                                            <!-- Calendar Days -->
+
+                                            <div
+                                                class="calendar-grid"
+                                                id="calendarGrid"
+                                                aria-label="Choose booking date"
+                                            >
+                                                <!-- Generated by booking.js -->
+                                            </div>
+
+
+                                        </div>
+                                        <!-- /.calendar-panel -->
+
+
+                                    </div>
+                                    <!-- /.date-dropdown -->
+
+
+
+                                    <!-- ======================
+                                         TIME
+                                    ======================= -->
+
+                                    <div class="booking-dropdown time-dropdown">
+
+
+                                        <!-- Time Trigger -->
+
+                                        <button
+                                            type="button"
+                                            class="booking-select"
+                                            id="timeSelect"
+                                            aria-expanded="false"
+                                            aria-controls="timeDropdownPanel"
+                                        >
+
+                                            <span
+                                                class="booking-select-icon"
+                                                aria-hidden="true"
+                                            >
+
+                                                <svg viewBox="0 0 24 24">
+
+                                                    <circle
+                                                        cx="12"
+                                                        cy="12"
+                                                        r="9"
+                                                    />
+
+                                                    <path
+                                                        d="M12 7v5l3 2"
+                                                    />
+
+                                                </svg>
+
+                                            </span>
+
+
+                                            <span
+                                                class="booking-select-value"
+                                                id="timeSelectValue"
+                                            >
+                                                Select time
+                                            </span>
+
+
+                                            <span
+                                                class="booking-select-chevron"
+                                                aria-hidden="true"
+                                            >
+                                                ↓
+                                            </span>
+
+                                        </button>
+
+
+
+                                        <!-- Time Dropdown -->
+
+                                        <div
+                                            class="booking-dropdown-panel time-panel"
+                                            id="timeDropdownPanel"
+                                            hidden
+                                        >
+
+
+                                            <div class="time-panel-header">
+
+                                                <span>
+                                                    Training Sessions
+                                                </span>
+
+                                            </div>
+
+
+
+                                            <div
+                                                class="time-scroll"
+                                                id="timeScroll"
+                                                role="listbox"
+                                                aria-label="Choose a training time"
+                                            >
+
+
+                                                <!-- 04:00 PM -->
+
+                                                <button
+                                                    type="button"
+                                                    class="time-scroll-option"
+                                                    data-time="16:00"
+                                                    data-label="04:00 — 05:00 PM"
+                                                    aria-selected="false"
+                                                    role="option"
+                                                >
+
+                                                    <span class="time-scroll-time">
+                                                        04:00 PM
+                                                    </span>
+
+                                                    <span class="time-scroll-session">
+                                                        Until 05:00 PM
+                                                    </span>
+
+                                                </button>
+
+
+
+                                                <!-- 05:00 PM -->
+
+                                                <button
+                                                    type="button"
+                                                    class="time-scroll-option"
+                                                    data-time="17:00"
+                                                    data-label="05:00 — 06:00 PM"
+                                                    aria-selected="false"
+                                                    role="option"
+                                                >
+
+                                                    <span class="time-scroll-time">
+                                                        05:00 PM
+                                                    </span>
+
+                                                    <span class="time-scroll-session">
+                                                        Until 06:00 PM
+                                                    </span>
+
+                                                </button>
+
+
+
+                                                <!-- 06:00 PM -->
+
+                                                <button
+                                                    type="button"
+                                                    class="time-scroll-option"
+                                                    data-time="18:00"
+                                                    data-label="06:00 — 07:00 PM"
+                                                    aria-selected="false"
+                                                    role="option"
+                                                >
+
+                                                    <span class="time-scroll-time">
+                                                        06:00 PM
+                                                    </span>
+
+                                                    <span class="time-scroll-session">
+                                                        Until 07:00 PM
+                                                    </span>
+
+                                                </button>
+
+
+                                            </div>
+
+
+                                        </div>
+                                        <!-- /.time-panel -->
+
+
+                                    </div>
+                                    <!-- /.time-dropdown -->
+
+
+                                </div>
+                                <!-- /.booking-when-options -->
+
+
+                            </div>
+                            <!-- /.booking-when-group -->
+
+
+
+                            <!-- ==============================
+                                 02 — EQUIPMENT
+                            =============================== -->
+
+                            <div
+                                class="filter-group equipment-filter-group"
+                                role="group"
+                                aria-labelledby="equipmentFilterLabel"
+                            >
+
+
+                                <!-- Label -->
+
+                                <div class="filter-label">
+
+                                    <span>
+                                        02
+                                    </span>
+
+                                    <p id="equipmentFilterLabel">
+                                        Equipment
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- Options -->
+
+                                <div
+                                    class="filter-options equipment-filter-options"
+                                    id="equipmentFilterOptions"
+                                >
+
+
+                                    <!-- Dumbbells -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="dumbbells"
+                                        aria-pressed="false"
+                                    >
+                                        Dumbbells
+                                    </button>
+
+
+
+                                    <!-- Barbell -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="barbell"
+                                        aria-pressed="false"
+                                    >
+                                        Barbell & Plates
+                                    </button>
+
+
+
+                                    <!-- Bench -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="bench"
+                                        aria-pressed="false"
+                                    >
+                                        Weight Bench
+                                    </button>
+
+
+
+                                    <!-- Bands -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="bands"
+                                        aria-pressed="false"
+                                    >
+                                        Resistance Bands
+                                    </button>
+
+
+
+                                    <!-- Kettlebells -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="kettlebells"
+                                        aria-pressed="false"
+                                    >
+                                        Kettlebells
+                                    </button>
+
+
+
+                                    <!-- Pull-Up Bar -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="pullup"
+                                        aria-pressed="false"
+                                    >
+                                        Pull-Up Bar
+                                    </button>
+
+
+
+                                    <!-- Yoga Mat -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="mat"
+                                        aria-pressed="false"
+                                    >
+                                        Yoga Mat
+                                    </button>
+
+
+
+                                    <!-- Jump Rope -->
+
+                                    <button
+                                        type="button"
+                                        class="filter-option equipment-filter"
+                                        data-equipment="rope"
+                                        aria-pressed="false"
+                                    >
+                                        Jump Rope
+                                    </button>
+
+
+                                </div>
+
+
+                            </div>
+                            <!-- /.equipment-filter-group -->
+
+
+
+                            <!-- ==============================
+                                 AVAILABILITY
+                            =============================== -->
+
+                            <section
+                                class="availability-result"
+                                id="availabilityResult"
+                                aria-live="polite"
+                                aria-atomic="true"
+                            >
+
+
+                                <!-- ==========================
+                                     DEFAULT / INCOMPLETE
+                                =========================== -->
+
+                                <div
+                                    class="availability-state availability-state--empty"
+                                    id="availabilityEmpty"
+                                >
+
+                                    <div class="result-status">
+
+
+                                        <span
+                                            class="result-status-mark"
+                                            aria-hidden="true"
+                                        >
+                                            —
+                                        </span>
+
+
+                                        <div>
+
+                                            <span class="result-kicker">
+                                                Availability
+                                            </span>
+
+
+                                            <h2>
+                                                Choose your preferences.
+                                            </h2>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <p>
+                                        Select a date, time and at least
+                                        one piece of equipment to check
+                                        the slot.
+                                    </p>
+
+                                </div>
+
+
+
+                                <!-- ==========================
+                                     AVAILABLE
+                                =========================== -->
+
+                                <div
+                                    class="availability-state availability-state--available"
+                                    id="availabilityAvailable"
+                                    hidden
+                                >
+
+
+                                    <div class="result-status">
+
+
+                                        <span
+                                            class="result-status-mark"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+
+                                        <div>
+
+                                            <span class="result-kicker">
+                                                Available
+                                            </span>
+
+
+                                            <h2>
+                                                Everything you need is available.
+                                            </h2>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <!-- Selection Summary -->
+
+                                    <div class="availability-summary">
+
+
+                                        <!-- Date -->
+
+                                        <div class="summary-item">
+
+                                            <span>
+                                                Date
+                                            </span>
+
+                                            <strong id="resultDate">
+                                                —
+                                            </strong>
+
+                                        </div>
+
+
+
+                                        <!-- Time -->
+
+                                        <div class="summary-item">
+
+                                            <span>
+                                                Time
+                                            </span>
+
+                                            <strong id="resultTime">
+                                                —
+                                            </strong>
+
+                                        </div>
+
+
+
+                                        <!-- Equipment -->
+
+                                        <div
+                                            class="summary-item summary-item--equipment"
+                                        >
+
+                                            <span>
+                                                Equipment
+                                            </span>
+
+                                            <strong id="resultEquipment">
+                                                —
+                                            </strong>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <!-- Confirm -->
+
+                                    <div class="availability-actions">
+
+                                        <button
+                                            type="button"
+                                            class="confirm-booking"
+                                            id="confirmBooking"
+                                        >
+
+                                            Confirm booking
+
+                                            <span aria-hidden="true">
+                                                ↗
+                                            </span>
+
+                                        </button>
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <!-- ==========================
+                                     CONFLICT
+                                =========================== -->
+
+                                <div
+                                    class="availability-state availability-state--conflict"
+                                    id="availabilityConflict"
+                                    hidden
+                                >
+
+
+                                    <div class="result-status">
+
+
+                                        <span
+                                            class="result-status-mark"
+                                            aria-hidden="true"
+                                        >
+                                            !
+                                        </span>
+
+
+                                        <div>
+
+                                            <span class="result-kicker">
+                                                Partial Match
+                                            </span>
+
+
+                                            <h2>
+                                                This slot doesn't match everything.
+                                            </h2>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                    <!-- Conflict Message -->
+
+                                    <p
+                                        class="conflict-message"
+                                        id="conflictMessage"
+                                    >
+                                        Some of your selected equipment
+                                        is not expected to be available
+                                        during this slot.
+                                    </p>
+
+
+
+                                    <!-- Alternative Priority -->
+
+                                    <div class="alternative-priority">
+
+                                        <span>
+                                            Find alternatives that keep
+                                        </span>
+
+
+                                        <div
+                                            class="priority-options"
+                                            id="priorityOptions"
+                                            role="group"
+                                            aria-label="Choose what to prioritise"
+                                        >
+
+
+                                            <button
+                                                type="button"
+                                                class="priority-option active"
+                                                data-priority="date"
+                                                aria-pressed="true"
+                                            >
+                                                My date
+                                            </button>
+
+
+                                            <button
+                                                type="button"
+                                                class="priority-option"
+                                                data-priority="time"
+                                                aria-pressed="false"
+                                            >
+                                                My time
+                                            </button>
+
+
+                                            <button
+                                                type="button"
+                                                class="priority-option"
+                                                data-priority="equipment"
+                                                aria-pressed="false"
+                                            >
+                                                My equipment
+                                            </button>
+
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- Alternatives -->
+
+                                    <div
+                                        class="alternative-list"
+                                        id="alternativeList"
+                                    >
+                                        <!-- Generated by booking.js -->
+                                    </div>
+
+
+                                </div>
+
+
+                            </section>
+                            <!-- /.availability-result -->
+
+
+                        </div>
+                        <!-- /.booking-filter-panel -->
+
+
+                    </div>
+                    <!-- /.booking-stage-grid -->
+
+
+                </section>
+                <!-- /STATE 01 -->
+
+
+
+                <!-- ==========================================
+                     STATE 02 — CONFIRMED
+                =========================================== -->
+
+                <section
+                    class="booking-stage confirmation-stage"
+                    data-step="2"
+                    aria-labelledby="confirmationTitle"
+                    aria-hidden="true"
+                >
+
+                    <div class="confirmation-content">
+
+
+                        <h2 id="confirmationTitle">
+
+                            YOU'RE
+
+                            <span>
+                                ALL SET.
+                            </span>
+
+                        </h2>
+
+
+                        <p class="stage-eyebrow">
+                            ( Your booking for the training session has been confirmed )
+                        </p>
+
+
+
+                        <!-- ==============================
+                             CONFIRMATION SUMMARY
+                        =============================== -->
+
+                        <div class="confirmation-summary">
+
+
+                            <!-- Date -->
+
+                            <div class="confirmation-summary-row">
+
+                                <span>
+                                    Date
+                                </span>
+
+                                <strong id="confirmationDate">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+
+                            <!-- Time -->
+
+                            <div class="confirmation-summary-row">
+
+                                <span>
+                                    Time
+                                </span>
+
+                                <strong id="confirmationTime">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+
+                            <!-- Equipment -->
+
+                            <div class="confirmation-summary-row">
+
+                                <span>
+                                    Equipment
+                                </span>
+
+                                <strong id="confirmationEquipment">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+                <!-- /STATE 02 -->
+
+
+            </div>
+            <!-- /.booking-track -->
+
+
+        </div>
+        <!-- /.booking-viewport -->
+
+
+
+        <!-- ==================================================
+             ACCESSIBILITY STATUS
+        =================================================== -->
+
+        <p
+            class="booking-status"
+            id="bookingStatus"
+            aria-live="polite"
+            aria-atomic="true"
+        ></p>
+
+
+    </main>
+    <!-- /.booking-shell -->
+
+
+
+    <!-- ======================================================
+         BOOKING SCRIPT
+    ======================================================= -->
+
+    <script src="booking.js"></script>
+
+</body>
+
+</html>
